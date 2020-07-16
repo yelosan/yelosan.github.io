@@ -190,8 +190,8 @@
   ***/
 
   /***
-   * https://dl.dropboxusercontent.com/s/y438mihit4odhye/paninap-fonts.css
-   * https://dl.dropboxusercontent.com/s/vs3jlayoam6asps/paninap-style.css
+   * https://yelosanpub.laibcoms.com/rsc/css/paninap-fonts.css
+   * https://yelosanpub.laibcoms.com/rsc/css/paninap-style.css
   ***/
 
   /***
@@ -223,9 +223,9 @@
         src: local("Baybayin Modern Club Regular"), /* full font name */
              local("Baybayin Modern Club"), /* full font name */
              local("BaybayinModernClub"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/ivowvet9y6m7ieb/baybayintagalogmodernclub-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/6obfqqe5nrfvupn/baybayintagalogmodernclub-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/bpzyjenbqjye782/baybayintagalogmodernclub-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: bold;
@@ -238,9 +238,9 @@
         src: local("Baybayin Modern Club Regular"), /* full font name */
              local("Baybayin Modern Club"), /* full font name */
              local("BaybayinModernClub"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/ivowvet9y6m7ieb/baybayintagalogmodernclub-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/6obfqqe5nrfvupn/baybayintagalogmodernclub-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/bpzyjenbqjye782/baybayintagalogmodernclub-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: bold;
@@ -253,9 +253,9 @@
         src: local("Baybayin Modern Club Regular"), /* full font name */
              local("Baybayin Modern Club"), /* full font name */
              local("BaybayinModernClub"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/ivowvet9y6m7ieb/baybayintagalogmodernclub-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/6obfqqe5nrfvupn/baybayintagalogmodernclub-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/bpzyjenbqjye782/baybayintagalogmodernclub-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: normal;
@@ -268,9 +268,9 @@
         src: local("Baybayin Modern Club Regular"), /* full font name */
              local("Baybayin Modern Club"), /* full font name */
              local("BaybayinModernClub"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/ivowvet9y6m7ieb/baybayintagalogmodernclub-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/6obfqqe5nrfvupn/baybayintagalogmodernclub-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/bpzyjenbqjye782/baybayintagalogmodernclub-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: normal;
@@ -307,9 +307,9 @@
         src: local("Hebrew Paleo Gezer Medium"), /* full font name */
              local("Hebrew Paleo Gezer"), /* full font name */
              local("Hebrew-Paleo-Gezer"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/vwh2h0rb83finx6/hebrew-paleo-gezer-pure-unicode-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/jkoznk20vhmntq9/hebrew-paleo-gezer-pure-unicode-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/dtiwdk2c4q7kicq/hebrew-paleo-gezer-pure-unicode-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "IWR";
         font-weight: bold;
@@ -322,9 +322,9 @@
         src: local("Hebrew Paleo Gezer Medium"), /* full font name */
              local("Hebrew Paleo Gezer"), /* full font name */
              local("Hebrew-Paleo-Gezer"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/vwh2h0rb83finx6/hebrew-paleo-gezer-pure-unicode-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/jkoznk20vhmntq9/hebrew-paleo-gezer-pure-unicode-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/dtiwdk2c4q7kicq/hebrew-paleo-gezer-pure-unicode-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "IWR";
         font-weight: bold;
@@ -337,9 +337,9 @@
         src: local("Hebrew Paleo Gezer Medium"), /* full font name */
              local("Hebrew Paleo Gezer"), /* full font name */
              local("Hebrew-Paleo-Gezer"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/vwh2h0rb83finx6/hebrew-paleo-gezer-pure-unicode-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/jkoznk20vhmntq9/hebrew-paleo-gezer-pure-unicode-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/dtiwdk2c4q7kicq/hebrew-paleo-gezer-pure-unicode-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "IWR";
         font-weight: normal;
@@ -352,9 +352,9 @@
         src: local("Hebrew Paleo Gezer Medium"), /* full font name */
              local("Hebrew Paleo Gezer"), /* full font name */
              local("Hebrew-Paleo-Gezer"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/vwh2h0rb83finx6/hebrew-paleo-gezer-pure-unicode-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/jkoznk20vhmntq9/hebrew-paleo-gezer-pure-unicode-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/dtiwdk2c4q7kicq/hebrew-paleo-gezer-pure-unicode-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "IWR";
         font-weight: normal;
@@ -387,7 +387,7 @@
         src: local("Twitter Color Emoji Regular"), /* full font name */
              local("Twitter Color Emoji SVGinOT"), /* full font name */
              local("TwitterColorEmojiSVGinOT"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/aa9tjdyg1fw1he3/TwitterColorEmoji-SVGinOT.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/TwitterColorEmoji-SVGinOT.ttf") format("opentype");
         font-display: swap;
         font-weight: bold;
         font-style: italic;
@@ -398,7 +398,7 @@
         src: local("Twitter Color Emoji Regular"), /* full font name */
              local("Twitter Color Emoji SVGinOT"), /* full font name */
              local("TwitterColorEmojiSVGinOT"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/aa9tjdyg1fw1he3/TwitterColorEmoji-SVGinOT.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/TwitterColorEmoji-SVGinOT.ttf") format("opentype");
         font-display: swap;
         font-weight: bold;
         font-style: normal;
@@ -409,7 +409,7 @@
         src: local("Twitter Color Emoji Regular"), /* full font name */
              local("Twitter Color Emoji SVGinOT"), /* full font name */
              local("TwitterColorEmojiSVGinOT"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/aa9tjdyg1fw1he3/TwitterColorEmoji-SVGinOT.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/TwitterColorEmoji-SVGinOT.ttf") format("opentype");
         font-display: swap;
         font-weight: normal;
         font-style: italic;
@@ -420,7 +420,7 @@
         src: local("Twitter Color Emoji Regular"), /* full font name */
              local("Twitter Color Emoji SVGinOT"), /* full font name */
              local("TwitterColorEmojiSVGinOT"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/aa9tjdyg1fw1he3/TwitterColorEmoji-SVGinOT.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/TwitterColorEmoji-SVGinOT.ttf") format("opentype");
         font-display: swap;
         font-weight: normal;
         font-style: normal;
@@ -436,9 +436,9 @@
         src: local("Proto Canaanite Medium"), /* full font name */
              local("Proto Canaanite"), /* full font name */
              local("Proto-Canaanite"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/1cuk3vs9d6sthmb/proto-canaanite-pure-unicode-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/n5utrzgpxt3597u/proto-canaanite-pure-unicode-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/vf7bfl2edd9wh91/proto-canaanite-pure-unicode-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "IWR";
         font-weight: bold;
@@ -451,9 +451,9 @@
         src: local("Proto Canaanite Medium"), /* full font name */
              local("Proto Canaanite"), /* full font name */
              local("Proto-Canaanite"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/1cuk3vs9d6sthmb/proto-canaanite-pure-unicode-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/n5utrzgpxt3597u/proto-canaanite-pure-unicode-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/vf7bfl2edd9wh91/proto-canaanite-pure-unicode-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "IWR";
         font-weight: bold;
@@ -466,9 +466,9 @@
         src: local("Proto Canaanite Medium"), /* full font name */
              local("Proto Canaanite"), /* full font name */
              local("Proto-Canaanite"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/1cuk3vs9d6sthmb/proto-canaanite-pure-unicode-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/n5utrzgpxt3597u/proto-canaanite-pure-unicode-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/vf7bfl2edd9wh91/proto-canaanite-pure-unicode-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "IWR";
         font-weight: normal;
@@ -481,9 +481,9 @@
         src: local("Proto Canaanite Medium"), /* full font name */
              local("Proto Canaanite"), /* full font name */
              local("Proto-Canaanite"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/1cuk3vs9d6sthmb/proto-canaanite-pure-unicode-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/n5utrzgpxt3597u/proto-canaanite-pure-unicode-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/vf7bfl2edd9wh91/proto-canaanite-pure-unicode-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "IWR";
         font-weight: normal;
@@ -499,9 +499,9 @@
         src: local("Baybayin Mangyan Hanubrush Regular"), /* full font name */
              local("Baybayin Mangyan Hanubrush"), /* full font name */
              local("BaybayinMangyanHanubrush"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/kovyoxn69vwneaw/baybayinmangyanhanubrush-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/wi7a20r74eh1xnt/baybayinmangyanhanubrush-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/if4qnyhlalpmbgg/baybayinmangyanhanubrush-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: bold;
@@ -514,9 +514,9 @@
         src: local("Baybayin Mangyan Hanubrush Regular"), /* full font name */
              local("Baybayin Mangyan Hanubrush"), /* full font name */
              local("BaybayinMangyanHanubrush"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/kovyoxn69vwneaw/baybayinmangyanhanubrush-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/wi7a20r74eh1xnt/baybayinmangyanhanubrush-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/if4qnyhlalpmbgg/baybayinmangyanhanubrush-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: bold;
@@ -529,9 +529,9 @@
         src: local("Baybayin Mangyan Hanubrush Regular"), /* full font name */
              local("Baybayin Mangyan Hanubrush"), /* full font name */
              local("BaybayinMangyanHanubrush"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/kovyoxn69vwneaw/baybayinmangyanhanubrush-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/wi7a20r74eh1xnt/baybayinmangyanhanubrush-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/if4qnyhlalpmbgg/baybayinmangyanhanubrush-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: normal;
@@ -544,9 +544,9 @@
         src: local("Baybayin Mangyan Hanubrush Regular"), /* full font name */
              local("Baybayin Mangyan Hanubrush"), /* full font name */
              local("BaybayinMangyanHanubrush"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/kovyoxn69vwneaw/baybayinmangyanhanubrush-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/wi7a20r74eh1xnt/baybayinmangyanhanubrush-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/if4qnyhlalpmbgg/baybayinmangyanhanubrush-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: normal;
@@ -562,9 +562,9 @@
         src: local("Baybayin Mangyan Buhid Regular"), /* full font name */
              local("Baybayin Mangyan Buhid"), /* full font name */
              local("BaybayinMangyanBuhid"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/cn5su1avmrdcrlb/baybayinmangyanbuhid-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/zrkcsp3gzm41eq3/baybayinmangyanbuhid-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/2ez7gko89uglhdf/baybayinmangyanbuhid-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: bold;
@@ -577,9 +577,9 @@
         src: local("Baybayin Mangyan Buhid Regular"), /* full font name */
              local("Baybayin Mangyan Buhid"), /* full font name */
              local("BaybayinMangyanBuhid"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/cn5su1avmrdcrlb/baybayinmangyanbuhid-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/zrkcsp3gzm41eq3/baybayinmangyanbuhid-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/2ez7gko89uglhdf/baybayinmangyanbuhid-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: bold;
@@ -592,9 +592,9 @@
         src: local("Baybayin Mangyan Buhid Regular"), /* full font name */
              local("Baybayin Mangyan Buhid"), /* full font name */
              local("BaybayinMangyanBuhid"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/cn5su1avmrdcrlb/baybayinmangyanbuhid-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/zrkcsp3gzm41eq3/baybayinmangyanbuhid-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/2ez7gko89uglhdf/baybayinmangyanbuhid-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: normal;
@@ -607,9 +607,9 @@
         src: local("Baybayin Mangyan Buhid Regular"), /* full font name */
              local("Baybayin Mangyan Buhid"), /* full font name */
              local("BaybayinMangyanBuhid"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/cn5su1avmrdcrlb/baybayinmangyanbuhid-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/zrkcsp3gzm41eq3/baybayinmangyanbuhid-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/2ez7gko89uglhdf/baybayinmangyanbuhid-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: normal;
@@ -625,9 +625,9 @@
         font-family: "Baybayin-Tagbanwa-paninap";
         src: local(""), /* full font name
              local(""), /* Postscript name
-             url("https://dl.dropboxusercontent.com/s/-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.ttf") format("opentype");
         font-display: swap;
         -webkit-font-language-override: "PIL";
                 font-language-override: "PIL";
@@ -640,9 +640,9 @@
         font-family: "Baybayin-Tagbanwa-paninap";
         src: local(""), /* full font name
              local(""), /* Postscript name
-             url("https://dl.dropboxusercontent.com/s/-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.ttf") format("opentype");
         font-display: swap;
         -webkit-font-language-override: "PIL";
                 font-language-override: "PIL";
@@ -655,9 +655,9 @@
         font-family: "Baybayin-Tagbanwa-paninap";
         src: local(""), /* full font name
              local(""), /* Postscript name
-             url("https://dl.dropboxusercontent.com/s/-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.ttf") format("opentype");
         font-display: swap;
         -webkit-font-language-override: "PIL";
                 font-language-override: "PIL";
@@ -670,9 +670,9 @@
         font-family: "Baybayin-Tagbanwa-paninap";
         src: local(""), /* full font name
              local(""), /* Postscript name
-             url("https://dl.dropboxusercontent.com/s/-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.ttf") format("opentype");
         font-display: swap;
         -webkit-font-language-override: "PIL";
                 font-language-override: "PIL";
@@ -690,9 +690,9 @@
         src: local("BARABARA Regular"), /* full font name */
              local("BARABARA"), /* full font name */
              local("BARABARARegular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/4y91d4h7w93r0w4/barabara-unicode-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/pevsq1vcwlphym0/barabara-unicode-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/hgz4omurpwf5tv1/barabara-unicode-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.ttf") format("opentype");
         font-display: swap;
         font-weight: bold;
         font-style: italic;
@@ -703,9 +703,9 @@
         src: local("BARABARA Regular"), /* full font name */
              local("BARABARA"), /* full font name */
              local("BARABARARegular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/4y91d4h7w93r0w4/barabara-unicode-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/pevsq1vcwlphym0/barabara-unicode-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/hgz4omurpwf5tv1/barabara-unicode-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.ttf") format("opentype");
         font-display: swap;
         font-weight: bold;
         font-style: normal;
@@ -716,9 +716,9 @@
         src: local("BARABARA Regular"), /* full font name */
              local("BARABARA"), /* full font name */
              local("BARABARARegular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/4y91d4h7w93r0w4/barabara-unicode-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/pevsq1vcwlphym0/barabara-unicode-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/hgz4omurpwf5tv1/barabara-unicode-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.ttf") format("opentype");
         font-display: swap;
         font-weight: normal;
         font-style: italic;
@@ -729,9 +729,9 @@
         src: local("BARABARA Regular"), /* full font name */
              local("BARABARA"), /* full font name */
              local("BARABARARegular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/4y91d4h7w93r0w4/barabara-unicode-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/pevsq1vcwlphym0/barabara-unicode-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/hgz4omurpwf5tv1/barabara-unicode-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.ttf") format("opentype");
         font-display: swap;
         font-weight: normal;
         font-style: normal;
@@ -758,9 +758,9 @@
         font-family: "Baybayin-Tagbanwa-NotoSans";
         src: local("Noto Sans Tagbanwa Regular"), /* full font name */
              local("NotoSansTagbanwa-Regular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/mzm2dwaqosyaxvz/notosanstagbanwa-regular-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/mx7rwydvgx16suh/notosanstagbanwa-regular-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/sypgp0hahikfrat/notosanstagbanwa-regular-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: bold;
@@ -772,9 +772,9 @@
         font-family: "Baybayin-Tagbanwa-NotoSans";
         src: local("Noto Sans Tagbanwa Regular"), /* full font name */
              local("NotoSansTagbanwa-Regular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/mzm2dwaqosyaxvz/notosanstagbanwa-regular-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/mx7rwydvgx16suh/notosanstagbanwa-regular-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/sypgp0hahikfrat/notosanstagbanwa-regular-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: bold;
@@ -786,9 +786,9 @@
         font-family: "Baybayin-Tagbanwa-NotoSans";
         src: local("Noto Sans Tagbanwa Regular"), /* full font name */
              local("NotoSansTagbanwa-Regular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/mzm2dwaqosyaxvz/notosanstagbanwa-regular-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/mx7rwydvgx16suh/notosanstagbanwa-regular-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/sypgp0hahikfrat/notosanstagbanwa-regular-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: normal;
@@ -800,9 +800,9 @@
         font-family: "Baybayin-Tagbanwa-NotoSans";
         src: local("Noto Sans Tagbanwa Regular"), /* full font name */
              local("NotoSansTagbanwa-Regular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/mzm2dwaqosyaxvz/notosanstagbanwa-regular-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/mx7rwydvgx16suh/notosanstagbanwa-regular-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/sypgp0hahikfrat/notosanstagbanwa-regular-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: normal;
@@ -817,9 +817,9 @@
         font-family: "Baybayin-MangyanBuhid-NotoSans";
         src: local("Noto Sans Buhid Regular"), /* full font name */
              local("NotoSansBuhid-Regular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/6h78n0txuncrejo/notosansbuhid-regular-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/yqbjudlawpiyrk6/notosansbuhid-regular-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/5o6y7aqmn8yh0f4/notosansbuhid-regular-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: bold;
@@ -831,9 +831,9 @@
         font-family: "Baybayin-MangyanBuhid-NotoSans";
         src: local("Noto Sans Buhid Regular"), /* full font name */
              local("NotoSansBuhid-Regular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/6h78n0txuncrejo/notosansbuhid-regular-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/yqbjudlawpiyrk6/notosansbuhid-regular-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/5o6y7aqmn8yh0f4/notosansbuhid-regular-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: bold;
@@ -845,9 +845,9 @@
         font-family: "Baybayin-MangyanBuhid-NotoSans";
         src: local("Noto Sans Buhid Regular"), /* full font name */
              local("NotoSansBuhid-Regular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/6h78n0txuncrejo/notosansbuhid-regular-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/yqbjudlawpiyrk6/notosansbuhid-regular-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/5o6y7aqmn8yh0f4/notosansbuhid-regular-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: normal;
@@ -859,9 +859,9 @@
         font-family: "Baybayin-MangyanBuhid-NotoSans";
         src: local("Noto Sans Buhid Regular"), /* full font name */
              local("NotoSansBuhid-Regular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/6h78n0txuncrejo/notosansbuhid-regular-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/yqbjudlawpiyrk6/notosansbuhid-regular-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/5o6y7aqmn8yh0f4/notosansbuhid-regular-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: normal;
@@ -876,9 +876,9 @@
         font-family: "Baybayin-MangyanHanunoo-NotoSans";
         src: local("Noto Sans Hanunoo Regular"), /* full font name */
              local("NotoSansHanunoo-Regular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/p6fnksqhyou3vvc/notosanshanunoo-regular-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/iuweztr1t18b3yw/notosanshanunoo-regular-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/dcqhhso8mcbbmoy/notosanshanunoo-regular-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: bold;
@@ -890,9 +890,9 @@
         font-family: "Baybayin-MangyanHanunoo-NotoSans";
         src: local("Noto Sans Hanunoo Regular"), /* full font name */
              local("NotoSansHanunoo-Regular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/p6fnksqhyou3vvc/notosanshanunoo-regular-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/iuweztr1t18b3yw/notosanshanunoo-regular-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/dcqhhso8mcbbmoy/notosanshanunoo-regular-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: bold;
@@ -904,9 +904,9 @@
         font-family: "Baybayin-MangyanHanunoo-NotoSans";
         src: local("Noto Sans Hanunoo Regular"), /* full font name */
              local("NotoSansHanunoo-Regular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/p6fnksqhyou3vvc/notosanshanunoo-regular-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/iuweztr1t18b3yw/notosanshanunoo-regular-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/dcqhhso8mcbbmoy/notosanshanunoo-regular-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: normal;
@@ -918,9 +918,9 @@
         font-family: "Baybayin-MangyanHanunoo-NotoSans";
         src: local("Noto Sans Hanunoo Regular"), /* full font name */
              local("NotoSansHanunoo-Regular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/p6fnksqhyou3vvc/notosanshanunoo-regular-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/iuweztr1t18b3yw/notosanshanunoo-regular-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/dcqhhso8mcbbmoy/notosanshanunoo-regular-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: normal;
@@ -935,9 +935,9 @@
         font-family: "Baybayin-Tagalog-NotoSans";
         src: local("Noto Sans Tagalog Regular"), /* full font name */
              local("NotoSansTagalog-Regular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/qz0hmmqt3r3ibmy/notosanstagalog-regular-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/sep7sy8dcc2dzvz/notosanstagalog-regular-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/wmbmmegtyz26v0t/notosanstagalog-regular-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: bold;
@@ -949,9 +949,9 @@
         font-family: "Baybayin-Tagalog-NotoSans";
         src: local("Noto Sans Tagalog Regular"), /* full font name */
              local("NotoSansTagalog-Regular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/qz0hmmqt3r3ibmy/notosanstagalog-regular-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/sep7sy8dcc2dzvz/notosanstagalog-regular-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/wmbmmegtyz26v0t/notosanstagalog-regular-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: bold;
@@ -963,9 +963,9 @@
         font-family: "Baybayin-Tagalog-NotoSans";
         src: local("Noto Sans Tagalog Regular"), /* full font name */
              local("NotoSansTagalog-Regular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/qz0hmmqt3r3ibmy/notosanstagalog-regular-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/sep7sy8dcc2dzvz/notosanstagalog-regular-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/wmbmmegtyz26v0t/notosanstagalog-regular-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: normal;
@@ -977,9 +977,9 @@
         font-family: "Baybayin-Tagalog-NotoSans";
         src: local("Noto Sans Tagalog Regular"), /* full font name */
              local("NotoSansTagalog-Regular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/qz0hmmqt3r3ibmy/notosanstagalog-regular-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/sep7sy8dcc2dzvz/notosanstagalog-regular-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/wmbmmegtyz26v0t/notosanstagalog-regular-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "PIL";
         font-weight: normal;
@@ -994,9 +994,9 @@
         font-family: "Hebrew-Modern-NotoSans";
         src: local("Noto Sans Hebrew Bold"), /* full font name */
              local("NotoSansHebrew-Bold"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/5azli5kk88xs0mk/notosanshebrew-bold-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/f02ivkfxecwwef9/notosanshebrew-bold-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/vhxfhch7szwnbmx/notosanshebrew-bold-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-bold-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-bold-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-bold-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "IWR";
         font-weight: bold;
@@ -1008,9 +1008,9 @@
         font-family: "Hebrew-Modern-NotoSans";
         src: local("Noto Sans Hebrew Bold"), /* full font name */
              local("NotoSansHebrew-Bold"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/5azli5kk88xs0mk/notosanshebrew-bold-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/f02ivkfxecwwef9/notosanshebrew-bold-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/vhxfhch7szwnbmx/notosanshebrew-bold-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-bold-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-bold-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-bold-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "IWR";
         font-weight: bold;
@@ -1022,9 +1022,9 @@
         font-family: "Hebrew-Modern-NotoSans";
         src: local("Noto Sans Hebrew"), /* full font name */
              local("NotoSansHebrew"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/jofhbijyv5qh5sn/notosanshebrew-regular-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/4tq9qv235xrwfxh/notosanshebrew-regular-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/guc03f34td8xl6j/notosanshebrew-regular-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-regular-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-regular-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-regular-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "IWR";
         font-weight: normal;
@@ -1036,9 +1036,9 @@
         font-family: "Hebrew-Modern-NotoSans";
         src: local("Noto Sans Hebrew"), /* full font name */
              local("NotoSansHebrew"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/jofhbijyv5qh5sn/notosanshebrew-regular-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/4tq9qv235xrwfxh/notosanshebrew-regular-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/guc03f34td8xl6j/notosanshebrew-regular-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-regular-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-regular-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-regular-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "IWR";
         font-weight: normal;
@@ -1053,9 +1053,9 @@
         font-family: "Hebrew-Phoenician-NotoSans";
         src: local("Noto Sans Phoenician Regular"), /* full font name */
              local("NotoSansPhoenician-Regular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/p3t6s3wtgulytu5/notosansphoenician-regular-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/leediwl2rdql2pg/notosansphoenician-regular-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/4uikjkro3n9y1nr/notosansphoenician-regular-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "IWR";
         font-weight: bold;
@@ -1067,9 +1067,9 @@
         font-family: "Hebrew-Phoenician-NotoSans";
         src: local("Noto Sans Phoenician Regular"), /* full font name */
              local("NotoSansPhoenician-Regular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/p3t6s3wtgulytu5/notosansphoenician-regular-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/leediwl2rdql2pg/notosansphoenician-regular-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/4uikjkro3n9y1nr/notosansphoenician-regular-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "IWR";
         font-weight: bold;
@@ -1081,9 +1081,9 @@
         font-family: "Hebrew-Phoenician-NotoSans";
         src: local("Noto Sans Phoenician Regular"), /* full font name */
              local("NotoSansPhoenician-Regular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/p3t6s3wtgulytu5/notosansphoenician-regular-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/leediwl2rdql2pg/notosansphoenician-regular-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/4uikjkro3n9y1nr/notosansphoenician-regular-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "IWR";
         font-weight: normal;
@@ -1095,9 +1095,9 @@
         font-family: "Hebrew-Phoenician-NotoSans";
         src: local("Noto Sans Phoenician Regular"), /* full font name */
              local("NotoSansPhoenician-Regular"), /* Postscript name */
-             url("https://dl.dropboxusercontent.com/s/p3t6s3wtgulytu5/notosansphoenician-regular-webfont.woff2") format("woff2"),
-             url("https://dl.dropboxusercontent.com/s/leediwl2rdql2pg/notosansphoenician-regular-webfont.woff") format("woff"),
-             url("https://dl.dropboxusercontent.com/s/4uikjkro3n9y1nr/notosansphoenician-regular-webfont.ttf") format("opentype");
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.woff2") format("woff2"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.woff") format("woff"),
+             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.ttf") format("opentype");
         font-display: swap;
         font-language-override: "IWR";
         font-weight: normal;
