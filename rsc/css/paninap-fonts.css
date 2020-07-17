@@ -1383,9 +1383,13 @@
 
   /* Unicode emoji */
     /* We need to add !important to guarantee default third-party theme styles won't affect our emojis. */
-    [class^="smiley-" i], [class$="-smiley" i], [class~="smiley" i],
-    [class^="emoticon-" i], [class$="-emoticon" i], [class~="emoticon" i],
-    [class^="emoji-" i], [class$="-emoji" i], [class~="emoji" i] {
+    /*
+    [class^="smiley-" i], [class$="-smiley" i],
+    [class^="emoticon-" i], [class$="-emoticon" i],
+    [class^="emoji-" i], [class$="-emoji" i],
+    [class*="emoji-" i], [class*="-emoji" i],
+    */
+    [class~="smiley" i], [class~="emoticon" i], [class~="emoji" i] {
       display: inline !important;
       background: none !important;
       border: none !important;
