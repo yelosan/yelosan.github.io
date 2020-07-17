@@ -181,6 +181,12 @@
     .inline_block {
       display: inline-block;
     }
+    /* Where are we using these?
+    .block_center.block_center.block_center,
+    .inline_center.inline_center.inline_center {
+      margin: 0 auto;
+    }
+    */
     .img_center {
       display: block;
       margin: 0 auto;
@@ -277,20 +283,28 @@
 
   /* BGN: Table */
     table {
+      border-collapse: collapse;
       border-color: hsla(0deg, 0%, 0%, 100%);
       border-color: hwb(0deg, 0%, 100%, 100%);
       border-style: solid;
-      border-width: 1px;
+      border-width: 0.2rem;
+      margin-bottom: 1rem;
+    }
+    th, td {
+      border-width: 0.1rem;
+      padding: 0.3rem;
     }
     th {
       background-color: hsla(0deg, 0%, 9%, 100%);
       background-color: hwb(0deg, 9%, 91%, 100%);
+      border-style: solid;
       color: hsla(0deg, 0%, 100%, 100%);
       color: hwb(0deg, 100%, 0%, 100%);
       text-align: center;
       vertical-align: center;
     }
     td {
+      border-style: dashed;
       vertical-align: center;
     }
   /* END: Table */
@@ -407,10 +421,25 @@
 ** BGN: Box Sizes **
 *******************/
   /* rarely used, consider removing later */
-  [class$="-percent" i],
-  .block_center.block_center.block_center,
-  .inline_center.inline_center.inline_center {
-    margin: 0 auto;
+  /* used in Unicode and Emoji Test Page */
+  [class$="-percent" i] {
+    margin: 0 auto; /* center the table */
+      -webkit-margin-before: 0;
+              margin-block-start: 0;
+      -webkit-margin-after: 0;
+              margin-block-end: 0;
+      -webkit-margin-start: auto;
+              margin-inline-start: auto;
+      -webkit-margin-end: auto;
+              margin-inline-end: auto;
+
+    /* restore the top-bottom margins */
+    margin-top: inherit;
+      -webkit-margin-start: inherit;
+              margin-inline-start: inherit;
+    margin-bottom: inherit;
+      -webkit-margin-end: inherit;
+              margin-inline-end: inherit;
   }
   .onehundred-percent {
     width: 100%;
