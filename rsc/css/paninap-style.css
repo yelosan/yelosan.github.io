@@ -293,6 +293,8 @@
     th, td {
       border-width: 0.1rem;
       padding: 0.3rem;
+      text-align: center;
+      vertical-align: middle;
     }
     th {
       background-color: hsla(0deg, 0%, 9%, 100%);
@@ -300,12 +302,9 @@
       border-style: solid;
       color: hsla(0deg, 0%, 100%, 100%);
       color: hwb(0deg, 100%, 0%, 100%);
-      text-align: center;
-      vertical-align: center;
     }
     td {
       border-style: dashed;
-      vertical-align: center;
     }
   /* END: Table */
 
