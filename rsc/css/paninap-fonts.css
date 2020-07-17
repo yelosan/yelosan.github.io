@@ -1401,14 +1401,14 @@
       font-variant-emoji: emoji;
       font-synthesis: none;
     }
-    .unicode_emoji {
+    .unicode_emoji { /* usage: <span class="unicode_emoji">emoji_here</span> */
       font-family: "Emoji-Twemoji-Color-SVGinOT", "Twitter Color Emoji", "Twemoji", emoji;
       font-variant-emoji: emoji;
       font-size: larger;
       font-synthesis: none;
     }
     .unicode_emoji_test {
-      font-size: 2.5em;
+      font-size: 2.5rem;
     }
 /***************
 ** END: FONTS **
