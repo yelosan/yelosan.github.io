@@ -81,31 +81,31 @@
 /***************
 ** BGN: Hacks **
 ***************/
-  :root,
-  html,
-  * {
-    font-variant-ligatures: normal;
-    font-variant-numeric: oldstyle-nums tabular-nums slashed-zero; /* Set font-variant-numeric to how it should be. */
-    /* font-variant-alternates: historical-forms; */ /* hist */
-    font-variant: normal oldstyle-nums tabular-nums slashed-zero; /* Set in case some browsers does not recognise the above specific settings. */
-    font-variant-emoji: emoji;
-    -webkit-font-kerning: normal;
-            font-kerning: normal;
+	:root,
+	html,
+	* {
+		font-variant-ligatures: normal;
+		font-variant-numeric: oldstyle-nums tabular-nums slashed-zero; /* Set font-variant-numeric to how it should be. */
+		/* font-variant-alternates: historical-forms; */ /* hist */
+		font-variant: normal oldstyle-nums tabular-nums slashed-zero; /* Set in case some browsers does not recognise the above specific settings. */
+		font-variant-emoji: emoji;
+		-webkit-font-kerning: normal;
+						font-kerning: normal;
 
-    font-optical-sizing: auto;
-    text-rendering: geometricPrecision;
+		font-optical-sizing: auto;
+		text-rendering: geometricPrecision;
 
-    /* Better to do it on a per :lang() and .class basis. If enabled, make sure all fonts used have bold and italic support.
-    font-synthesis: none;
-    */
+		/* Better to do it on a per :lang() and .class basis. If enabled, make sure all fonts used have bold and italic support.
+		font-synthesis: none;
+		*/
 
-    /* guide
-    font-synthesis-weight: auto;
-    font-synthesis-style: auto;
-    font-synthesis-small-caps: auto;
-    font-synthesis: auto auto auto;
-    */
-  }
+		/* guide
+		font-synthesis-weight: auto;
+		font-synthesis-style: auto;
+		font-synthesis-small-caps: auto;
+		font-synthesis: auto auto auto;
+		*/
+	}
 /***************
 ** END: Hacks **
 ***************/
@@ -113,58 +113,58 @@
 /************************
 ** BGN: Default styles **
 ************************/
-  [class^="nums-" i] {
-    font-family: "Source Sans Pro", sans-serif;
-  }
-  [class$="-mono" i] {
-    font-family: "Source Code Pro", monospace;
-  }
-  [class$="-serif" i] {
-    font-family: "Source Serif Pro", serif;
-  }
+	[class^="nums-" i] {
+		font-family: "Source Sans Pro", sans-serif;
+	}
+	[class$="-mono" i] {
+		font-family: "Source Code Pro", monospace;
+	}
+	[class$="-serif" i] {
+		font-family: "Source Serif Pro", serif;
+	}
 
-  /* OpenType Stacked-Fractions (afrc) */
-    [class~="nums-fractions" i] {
-      /* font-family: "none-found-yet"; */ /* OpenType fonts with Fractions support */
-      font-variant-numeric: oldstyle-nums tabular-nums stacked-fractions slashed-zero;
-    }
-  /* OpenType Ordinal (ordn) */
-    [class~="nums-ordinal" i] {
-      font-family: "Calibri"; /* OpenType fonts with Ordinal support */
-      font-variant-numeric: oldstyle-nums tabular-nums ordinal slashed-zero;
-    }
-  /* OpenType Superscript (sups) */
-    .superscript {
-      font-variant-position: super;
-    }
-  /* OpenType Subscript (subs) */
-    .subscript {
-      font-variant-position: sub;
-    }
-  /* OpenType small-caps (smcp) */
-    .small-caps {
-      font-variant-caps: small-caps;
-    }
-  /* OpenType all-small-caps (c2sc) */
-    .all-small-caps {
-      font-variant-caps: all-small-caps;
-    }
-  /* OpenType petite-caps (pcap) */
-    .petite-caps {
-      font-variant-caps: petite-caps;
-    }
-  /* OpenType all-petite-caps (c2pc, pcap) */
-    .all-petite-caps {
-      font-variant-caps: all-petite-caps;
-    }
-  /* OpenType unicase (unic) */
-    .unicase {
-      font-variant-caps: unicase;
-    }
-  /* OpenType titling-caps (titl) */
-    .titling-caps {
-      font-variant-caps: titling-caps;
-    }
+	/* OpenType Stacked-Fractions (afrc) */
+		[class~="nums-fractions" i] {
+			/* font-family: "none-found-yet"; */ /* OpenType fonts with Fractions support */
+			font-variant-numeric: oldstyle-nums tabular-nums stacked-fractions slashed-zero;
+		}
+	/* OpenType Ordinal (ordn) */
+		[class~="nums-ordinal" i] {
+			font-family: "Calibri"; /* OpenType fonts with Ordinal support */
+			font-variant-numeric: oldstyle-nums tabular-nums ordinal slashed-zero;
+		}
+	/* OpenType Superscript (sups) */
+		.superscript {
+			font-variant-position: super;
+		}
+	/* OpenType Subscript (subs) */
+		.subscript {
+			font-variant-position: sub;
+		}
+	/* OpenType small-caps (smcp) */
+		.small-caps {
+			font-variant-caps: small-caps;
+		}
+	/* OpenType all-small-caps (c2sc) */
+		.all-small-caps {
+			font-variant-caps: all-small-caps;
+		}
+	/* OpenType petite-caps (pcap) */
+		.petite-caps {
+			font-variant-caps: petite-caps;
+		}
+	/* OpenType all-petite-caps (c2pc, pcap) */
+		.all-petite-caps {
+			font-variant-caps: all-petite-caps;
+		}
+	/* OpenType unicase (unic) */
+		.unicase {
+			font-variant-caps: unicase;
+		}
+	/* OpenType titling-caps (titl) */
+		.titling-caps {
+			font-variant-caps: titling-caps;
+		}
 /************************
 ** END: Default styles **
 ************************/
@@ -172,1248 +172,1248 @@
 /***************
 ** BGN: FONTS **
 ***************/
-  /***
-   * A mandatory process for fonts we do not want browsers to apply synthetic bold and italics.
-   * Unfortunately, the CSS4 font-synthesis: none; descriptor is not yet recognized by most browsers.
-   * See: https://www.w3.org/TR/css-fonts-4/
-   *
-   * Setting font-style and font-weight descriptor via class and selectors will require
-   *   that all instances of the scripts should have that class or is correctly targeted.
-   *   However, this is not guaranteed if we use a CMS not designed for multi-script purposes.
-   *
-   * This "hack", if you will, enables us to apply these scripts at a global level.
-   *   e.g.
-   *     html,
-   *     body {
-   *       font-family: "Script1 font", "Script2 font", "Latin font";
-   *     }
-  ***/
+	/***
+	 * A mandatory process for fonts we do not want browsers to apply synthetic bold and italics.
+	 * Unfortunately, the CSS4 font-synthesis: none; descriptor is not yet recognized by most browsers.
+	 * See: https://www.w3.org/TR/css-fonts-4/
+	 *
+	 * Setting font-style and font-weight descriptor via class and selectors will require
+	 *   that all instances of the scripts should have that class or is correctly targeted.
+	 *   However, this is not guaranteed if we use a CMS not designed for multi-script purposes.
+	 *
+	 * This "hack", if you will, enables us to apply these scripts at a global level.
+	 *   e.g.
+	 *     html,
+	 *     body {
+	 *       font-family: "Script1 font", "Script2 font", "Latin font";
+	 *     }
+	***/
 
-  /***
-   * https://yelosanpub.laibcoms.com/rsc/css/paninap-fonts.css
-   * https://yelosanpub.laibcoms.com/rsc/css/paninap-style.css
-  ***/
+	/***
+	 * https://rsc.laibcoms.com/css/paninap-fonts.css
+	 * https://rsc.laibcoms.com/css/paninap-style.css
+	***/
 
-  /***
-   * List of font families
-   *
-   * Baybayin-Tagbanwa-NotoSans
-   * Baybayin-MangyanBuhid-NotoSans
-   * Baybayin-MangyanHanunoo-NotoSans
-   * Baybayin-Tagalog-NotoSans
-   * Hebrew-Modern-NotoSans
-   * Hebrew-Phoenician-NotoSans
-   *
-   * Baybayin-Tagbanwa-paninap
-   * Baybayin-MangyanBuhid-Nordenx
-   * Baybayin-MangyanHanunoo-Hanubrush-Nordenx
-   * Baybayin-Tagalog-ModernClub-Nordenx
-   * Hebrew-Paleo-Gezer-Unicode
-   * Hebrew-Proto-Canaanite-Unicode
-   *
-   * Barabara-Unicode-paninap
-   * Emoji-Twemoji-Color-SVGinOT
-  ***/
+	/***
+	 * List of font families
+	 *
+	 * Baybayin-Tagbanwa-NotoSans
+	 * Baybayin-MangyanBuhid-NotoSans
+	 * Baybayin-MangyanHanunoo-NotoSans
+	 * Baybayin-Tagalog-NotoSans
+	 * Hebrew-Modern-NotoSans
+	 * Hebrew-Phoenician-NotoSans
+	 *
+	 * Baybayin-Tagbanwa-paninap
+	 * Baybayin-MangyanBuhid-Nordenx
+	 * Baybayin-MangyanHanunoo-Hanubrush-Nordenx
+	 * Baybayin-Tagalog-ModernClub-Nordenx
+	 * Hebrew-Paleo-Gezer-Unicode
+	 * Hebrew-Proto-Canaanite-Unicode
+	 *
+	 * Barabara-Unicode-paninap
+	 * Emoji-Twemoji-Color-SVGinOT
+	***/
 
-  /* BGN: MOST USED */
-    /* BGN: [Custom] Baybayin-Tagalog-ModernClub-Nordenx */
-      @font-face {
-        font-family: "Baybayin-Tagalog-ModernClub-Nordenx";
-        font-family: "Tglg-paninap";
-        src: local("Baybayin Modern Club Regular"), /* full font name */
-             local("Baybayin Modern Club"), /* full font name */
-             local("BaybayinModernClub"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: bold;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+1700-171F, U+1734-1736, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-Tagalog-ModernClub-Nordenx";
-        src: local("Baybayin Modern Club Regular"), /* full font name */
-             local("Baybayin Modern Club"), /* full font name */
-             local("BaybayinModernClub"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+1700-171F, U+1734-1736, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-Tagalog-ModernClub-Nordenx";
-        src: local("Baybayin Modern Club Regular"), /* full font name */
-             local("Baybayin Modern Club"), /* full font name */
-             local("BaybayinModernClub"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: normal;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+1700-171F, U+1734-1736, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-Tagalog-ModernClub-Nordenx";
-        src: local("Baybayin Modern Club Regular"), /* full font name */
-             local("Baybayin Modern Club"), /* full font name */
-             local("BaybayinModernClub"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayintagalogmodernclub-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+1700-171F, U+1734-1736, U+20B1;
-      }
-    /* END: [Custom] Baybayin-Tagalog-ModernClub-Nordenx */
+	/* BGN: MOST USED */
+		/* BGN: [Custom] Baybayin-Tagalog-ModernClub-Nordenx */
+			@font-face {
+				font-family: "Baybayin-Tagalog-ModernClub-Nordenx";
+				font-family: "Tglg-paninap";
+				src: local("Baybayin Modern Club Regular"), /* full font name */
+						 local("Baybayin Modern Club"), /* full font name */
+						 local("BaybayinModernClub"), /* Postscript name */
+						 url("/rsc/fonts/baybayintagalogmodernclub-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/baybayintagalogmodernclub-webfont.woff") format("woff"),
+						 url("/rsc/fonts/baybayintagalogmodernclub-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: bold;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+1700-171F, U+1734-1736, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-Tagalog-ModernClub-Nordenx";
+				src: local("Baybayin Modern Club Regular"), /* full font name */
+						 local("Baybayin Modern Club"), /* full font name */
+						 local("BaybayinModernClub"), /* Postscript name */
+						 url("/rsc/fonts/baybayintagalogmodernclub-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/baybayintagalogmodernclub-webfont.woff") format("woff"),
+						 url("/rsc/fonts/baybayintagalogmodernclub-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: bold;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+1700-171F, U+1734-1736, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-Tagalog-ModernClub-Nordenx";
+				src: local("Baybayin Modern Club Regular"), /* full font name */
+						 local("Baybayin Modern Club"), /* full font name */
+						 local("BaybayinModernClub"), /* Postscript name */
+						 url("/rsc/fonts/baybayintagalogmodernclub-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/baybayintagalogmodernclub-webfont.woff") format("woff"),
+						 url("/rsc/fonts/baybayintagalogmodernclub-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: normal;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+1700-171F, U+1734-1736, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-Tagalog-ModernClub-Nordenx";
+				src: local("Baybayin Modern Club Regular"), /* full font name */
+						 local("Baybayin Modern Club"), /* full font name */
+						 local("BaybayinModernClub"), /* Postscript name */
+						 url("/rsc/fonts/baybayintagalogmodernclub-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/baybayintagalogmodernclub-webfont.woff") format("woff"),
+						 url("/rsc/fonts/baybayintagalogmodernclub-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+1700-171F, U+1734-1736, U+20B1;
+			}
+		/* END: [Custom] Baybayin-Tagalog-ModernClub-Nordenx */
 
-    /* BGN: Special Characters */
-      /* &-sign / ampersand */
-      /*
-      @font-face {
-        font-family: "ampersand";
-        src: local(""), /* full font name
-             local(""), /* Postscript name
-             url("../fonts/ampersand-regular-webfont.woff2") format("woff2"),
-             url("../fonts/ampersand-regular-webfont.woff") format("woff"),
-             url("../fonts/ampersand-regular-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+20B1; /* Peso currency
-      }
-      */
-    /* END: Special Characters */
-  /* END: MOST USED */
+		/* BGN: Special Characters */
+			/* &-sign / ampersand */
+			/*
+			@font-face {
+				font-family: "ampersand";
+				src: local(""), /* full font name
+						 local(""), /* Postscript name
+						 url("/rsc/fonts/ampersand-regular-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/ampersand-regular-webfont.woff") format("woff"),
+						 url("/rsc/fonts/ampersand-regular-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+20B1; /* Peso currency
+			}
+			*/
+		/* END: Special Characters */
+	/* END: MOST USED */
 
-  /* BGN: REGULARLY USED */
-    /* BGN: [Custom] Hebrew-Paleo-Gezer-Unicode */
-      @font-face {
-        font-family: "Hebrew-Paleo-Gezer-Unicode";
-        src: local("Hebrew Paleo Gezer Medium"), /* full font name */
-             local("Hebrew Paleo Gezer"), /* full font name */
-             local("Hebrew-Paleo-Gezer"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "IWR";
-        font-weight: bold;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+10900-1091F;
-      }
-      @font-face {
-        font-family: "Hebrew-Paleo-Gezer-Unicode";
-        src: local("Hebrew Paleo Gezer Medium"), /* full font name */
-             local("Hebrew Paleo Gezer"), /* full font name */
-             local("Hebrew-Paleo-Gezer"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "IWR";
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+10900-1091F;
-      }
-      @font-face {
-        font-family: "Hebrew-Paleo-Gezer-Unicode";
-        src: local("Hebrew Paleo Gezer Medium"), /* full font name */
-             local("Hebrew Paleo Gezer"), /* full font name */
-             local("Hebrew-Paleo-Gezer"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "IWR";
-        font-weight: normal;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+10900-1091F;
-      }
-      @font-face {
-        font-family: "Hebrew-Paleo-Gezer-Unicode";
-        src: local("Hebrew Paleo Gezer Medium"), /* full font name */
-             local("Hebrew Paleo Gezer"), /* full font name */
-             local("Hebrew-Paleo-Gezer"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "IWR";
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+10900-1091F;
-      }
-    /* END: [Custom] Hebrew-Paleo-Gezer-Unicode */
+	/* BGN: REGULARLY USED */
+		/* BGN: [Custom] Hebrew-Paleo-Gezer-Unicode */
+			@font-face {
+				font-family: "Hebrew-Paleo-Gezer-Unicode";
+				src: local("Hebrew Paleo Gezer Medium"), /* full font name */
+						 local("Hebrew Paleo Gezer"), /* full font name */
+						 local("Hebrew-Paleo-Gezer"), /* Postscript name */
+						 url("/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff") format("woff"),
+						 url("/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "IWR";
+				font-weight: bold;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+10900-1091F;
+			}
+			@font-face {
+				font-family: "Hebrew-Paleo-Gezer-Unicode";
+				src: local("Hebrew Paleo Gezer Medium"), /* full font name */
+						 local("Hebrew Paleo Gezer"), /* full font name */
+						 local("Hebrew-Paleo-Gezer"), /* Postscript name */
+						 url("/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff") format("woff"),
+						 url("/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "IWR";
+				font-weight: bold;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+10900-1091F;
+			}
+			@font-face {
+				font-family: "Hebrew-Paleo-Gezer-Unicode";
+				src: local("Hebrew Paleo Gezer Medium"), /* full font name */
+						 local("Hebrew Paleo Gezer"), /* full font name */
+						 local("Hebrew-Paleo-Gezer"), /* Postscript name */
+						 url("/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff") format("woff"),
+						 url("/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "IWR";
+				font-weight: normal;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+10900-1091F;
+			}
+			@font-face {
+				font-family: "Hebrew-Paleo-Gezer-Unicode";
+				src: local("Hebrew Paleo Gezer Medium"), /* full font name */
+						 local("Hebrew Paleo Gezer"), /* full font name */
+						 local("Hebrew-Paleo-Gezer"), /* Postscript name */
+						 url("/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.woff") format("woff"),
+						 url("/rsc/fonts/hebrew-paleo-gezer-pure-unicode-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "IWR";
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+10900-1091F;
+			}
+		/* END: [Custom] Hebrew-Paleo-Gezer-Unicode */
 
-    /* Composite font: Emoji Unicode Blocks with Mobile emoji support */
-    /*
-     * True emoji code points
-     *   U+1F100-1F1FF - Enclosed Alphanumeric Supplement (including regional indicator symbols)
-     *   U+1F300-1F5FF - Miscellaneous Symbols and Pictographs
-     *   U+1F600-1F64F - Emoticons
-     *   U+1F680-1F6FF - Transport and Map Symbols
-     *   U+1F900-1F9FF - Supplemantal Symbols and Pictographs
-     *
-     * Do not use for emoji fonts as these will replace commonly used dingbats and symbols.
-     *   U+2190-21FF - Arrows
-     *   U+2300-23FF - Miscellaneous Technical
-     *   U+2600-26FF - Miscellaneous Symbols
-     *   U+2700-27BF - Dingbats
-     *   U+2B00-2BFF - Miscellaneous Symbols and Arrows
-     *   U+2900-297F - Supplemental Arrows-B
-    **/
-    /* BGN: [Custom] Emoji-Twemoji-Color-SVGinOT */
-      @font-face {
-        font-family: "Emoji-Twemoji-Color-SVGinOT";
-        src: local("Twitter Color Emoji Regular"), /* full font name */
-             local("Twitter Color Emoji SVGinOT"), /* full font name */
-             local("TwitterColorEmojiSVGinOT"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/TwitterColorEmoji-SVGinOT.ttf") format("opentype");
-        font-display: swap;
-        font-weight: bold;
-        font-style: italic;
-        font-stretch: normal;
-      }
-      @font-face {
-        font-family: "Emoji-Twemoji-Color-SVGinOT";
-        src: local("Twitter Color Emoji Regular"), /* full font name */
-             local("Twitter Color Emoji SVGinOT"), /* full font name */
-             local("TwitterColorEmojiSVGinOT"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/TwitterColorEmoji-SVGinOT.ttf") format("opentype");
-        font-display: swap;
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-      }
-      @font-face {
-        font-family: "Emoji-Twemoji-Color-SVGinOT";
-        src: local("Twitter Color Emoji Regular"), /* full font name */
-             local("Twitter Color Emoji SVGinOT"), /* full font name */
-             local("TwitterColorEmojiSVGinOT"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/TwitterColorEmoji-SVGinOT.ttf") format("opentype");
-        font-display: swap;
-        font-weight: normal;
-        font-style: italic;
-        font-stretch: normal;
-      }
-      @font-face {
-        font-family: "Emoji-Twemoji-Color-SVGinOT";
-        src: local("Twitter Color Emoji Regular"), /* full font name */
-             local("Twitter Color Emoji SVGinOT"), /* full font name */
-             local("TwitterColorEmojiSVGinOT"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/TwitterColorEmoji-SVGinOT.ttf") format("opentype");
-        font-display: swap;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-      }
-    /* BGN: [Custom] Emoji-Twemoji-Color-SVGinOT */
-  /* END: REGULARLY USED */
+		/* Composite font: Emoji Unicode Blocks with Mobile emoji support */
+		/*
+		 * True emoji code points
+		 *   U+1F100-1F1FF - Enclosed Alphanumeric Supplement (including regional indicator symbols)
+		 *   U+1F300-1F5FF - Miscellaneous Symbols and Pictographs
+		 *   U+1F600-1F64F - Emoticons
+		 *   U+1F680-1F6FF - Transport and Map Symbols
+		 *   U+1F900-1F9FF - Supplemantal Symbols and Pictographs
+		 *
+		 * Do not use for emoji fonts as these will replace commonly used dingbats and symbols.
+		 *   U+2190-21FF - Arrows
+		 *   U+2300-23FF - Miscellaneous Technical
+		 *   U+2600-26FF - Miscellaneous Symbols
+		 *   U+2700-27BF - Dingbats
+		 *   U+2B00-2BFF - Miscellaneous Symbols and Arrows
+		 *   U+2900-297F - Supplemental Arrows-B
+		**/
+		/* BGN: [Custom] Emoji-Twemoji-Color-SVGinOT */
+			@font-face {
+				font-family: "Emoji-Twemoji-Color-SVGinOT";
+				src: local("Twitter Color Emoji Regular"), /* full font name */
+						 local("Twitter Color Emoji SVGinOT"), /* full font name */
+						 local("TwitterColorEmojiSVGinOT"), /* Postscript name */
+						 url("/rsc/fonts/TwitterColorEmoji-SVGinOT.ttf") format("opentype");
+				font-display: swap;
+				font-weight: bold;
+				font-style: italic;
+				font-stretch: normal;
+			}
+			@font-face {
+				font-family: "Emoji-Twemoji-Color-SVGinOT";
+				src: local("Twitter Color Emoji Regular"), /* full font name */
+						 local("Twitter Color Emoji SVGinOT"), /* full font name */
+						 local("TwitterColorEmojiSVGinOT"), /* Postscript name */
+						 url("/rsc/fonts/TwitterColorEmoji-SVGinOT.ttf") format("opentype");
+				font-display: swap;
+				font-weight: bold;
+				font-style: normal;
+				font-stretch: normal;
+			}
+			@font-face {
+				font-family: "Emoji-Twemoji-Color-SVGinOT";
+				src: local("Twitter Color Emoji Regular"), /* full font name */
+						 local("Twitter Color Emoji SVGinOT"), /* full font name */
+						 local("TwitterColorEmojiSVGinOT"), /* Postscript name */
+						 url("/rsc/fonts/TwitterColorEmoji-SVGinOT.ttf") format("opentype");
+				font-display: swap;
+				font-weight: normal;
+				font-style: italic;
+				font-stretch: normal;
+			}
+			@font-face {
+				font-family: "Emoji-Twemoji-Color-SVGinOT";
+				src: local("Twitter Color Emoji Regular"), /* full font name */
+						 local("Twitter Color Emoji SVGinOT"), /* full font name */
+						 local("TwitterColorEmojiSVGinOT"), /* Postscript name */
+						 url("/rsc/fonts/TwitterColorEmoji-SVGinOT.ttf") format("opentype");
+				font-display: swap;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+			}
+		/* BGN: [Custom] Emoji-Twemoji-Color-SVGinOT */
+	/* END: REGULARLY USED */
 
-  /* BGN: RARELY USED */
-    /* BGN: [Custom] Hebrew-Proto-Canaanite-Unicode */
-      @font-face {
-        font-family: "Hebrew-Proto-Canaanite-Unicode";
-        src: local("Proto Canaanite Medium"), /* full font name */
-             local("Proto Canaanite"), /* full font name */
-             local("Proto-Canaanite"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "IWR";
-        font-weight: bold;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+10900-1091F;
-      }
-      @font-face {
-        font-family: "Hebrew-Proto-Canaanite-Unicode";
-        src: local("Proto Canaanite Medium"), /* full font name */
-             local("Proto Canaanite"), /* full font name */
-             local("Proto-Canaanite"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "IWR";
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+10900-1091F;
-      }
-      @font-face {
-        font-family: "Hebrew-Proto-Canaanite-Unicode";
-        src: local("Proto Canaanite Medium"), /* full font name */
-             local("Proto Canaanite"), /* full font name */
-             local("Proto-Canaanite"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "IWR";
-        font-weight: normal;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+10900-1091F;
-      }
-      @font-face {
-        font-family: "Hebrew-Proto-Canaanite-Unicode";
-        src: local("Proto Canaanite Medium"), /* full font name */
-             local("Proto Canaanite"), /* full font name */
-             local("Proto-Canaanite"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/proto-canaanite-pure-unicode-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "IWR";
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+10900-1091F;
-      }
-    /* END: [Custom] Hebrew-Proto-Canaanite-Unicode */
+	/* BGN: RARELY USED */
+		/* BGN: [Custom] Hebrew-Proto-Canaanite-Unicode */
+			@font-face {
+				font-family: "Hebrew-Proto-Canaanite-Unicode";
+				src: local("Proto Canaanite Medium"), /* full font name */
+						 local("Proto Canaanite"), /* full font name */
+						 local("Proto-Canaanite"), /* Postscript name */
+						 url("/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff") format("woff"),
+						 url("/rsc/fonts/proto-canaanite-pure-unicode-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "IWR";
+				font-weight: bold;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+10900-1091F;
+			}
+			@font-face {
+				font-family: "Hebrew-Proto-Canaanite-Unicode";
+				src: local("Proto Canaanite Medium"), /* full font name */
+						 local("Proto Canaanite"), /* full font name */
+						 local("Proto-Canaanite"), /* Postscript name */
+						 url("/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff") format("woff"),
+						 url("/rsc/fonts/proto-canaanite-pure-unicode-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "IWR";
+				font-weight: bold;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+10900-1091F;
+			}
+			@font-face {
+				font-family: "Hebrew-Proto-Canaanite-Unicode";
+				src: local("Proto Canaanite Medium"), /* full font name */
+						 local("Proto Canaanite"), /* full font name */
+						 local("Proto-Canaanite"), /* Postscript name */
+						 url("/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff") format("woff"),
+						 url("/rsc/fonts/proto-canaanite-pure-unicode-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "IWR";
+				font-weight: normal;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+10900-1091F;
+			}
+			@font-face {
+				font-family: "Hebrew-Proto-Canaanite-Unicode";
+				src: local("Proto Canaanite Medium"), /* full font name */
+						 local("Proto Canaanite"), /* full font name */
+						 local("Proto-Canaanite"), /* Postscript name */
+						 url("/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/proto-canaanite-pure-unicode-webfont.woff") format("woff"),
+						 url("/rsc/fonts/proto-canaanite-pure-unicode-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "IWR";
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+10900-1091F;
+			}
+		/* END: [Custom] Hebrew-Proto-Canaanite-Unicode */
 
-    /* BGN: [Custom] Baybayin-MangyanHanunoo-Hanubrush-Nordenx */
-      @font-face {
-        font-family: "Baybayin-MangyanHanunoo-Hanubrush-Nordenx";
-        src: local("Baybayin Mangyan Hanubrush Regular"), /* full font name */
-             local("Baybayin Mangyan Hanubrush"), /* full font name */
-             local("BaybayinMangyanHanubrush"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: bold;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+1720-173F, U+1714, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-MangyanHanunoo-Hanubrush-Nordenx";
-        src: local("Baybayin Mangyan Hanubrush Regular"), /* full font name */
-             local("Baybayin Mangyan Hanubrush"), /* full font name */
-             local("BaybayinMangyanHanubrush"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+1720-173F, U+1714, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-MangyanHanunoo-Hanubrush-Nordenx";
-        src: local("Baybayin Mangyan Hanubrush Regular"), /* full font name */
-             local("Baybayin Mangyan Hanubrush"), /* full font name */
-             local("BaybayinMangyanHanubrush"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: normal;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+1720-173F, U+1714, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-MangyanHanunoo-Hanubrush-Nordenx";
-        src: local("Baybayin Mangyan Hanubrush Regular"), /* full font name */
-             local("Baybayin Mangyan Hanubrush"), /* full font name */
-             local("BaybayinMangyanHanubrush"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanhanubrush-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+1720-173F, U+1714, U+20B1;
-      }
-    /* END: [Custom] Baybayin-MangyanHanunoo-Hanubrush-Nordenx */
+		/* BGN: [Custom] Baybayin-MangyanHanunoo-Hanubrush-Nordenx */
+			@font-face {
+				font-family: "Baybayin-MangyanHanunoo-Hanubrush-Nordenx";
+				src: local("Baybayin Mangyan Hanubrush Regular"), /* full font name */
+						 local("Baybayin Mangyan Hanubrush"), /* full font name */
+						 local("BaybayinMangyanHanubrush"), /* Postscript name */
+						 url("/rsc/fonts/baybayinmangyanhanubrush-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/baybayinmangyanhanubrush-webfont.woff") format("woff"),
+						 url("/rsc/fonts/baybayinmangyanhanubrush-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: bold;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+1720-173F, U+1714, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-MangyanHanunoo-Hanubrush-Nordenx";
+				src: local("Baybayin Mangyan Hanubrush Regular"), /* full font name */
+						 local("Baybayin Mangyan Hanubrush"), /* full font name */
+						 local("BaybayinMangyanHanubrush"), /* Postscript name */
+						 url("/rsc/fonts/baybayinmangyanhanubrush-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/baybayinmangyanhanubrush-webfont.woff") format("woff"),
+						 url("/rsc/fonts/baybayinmangyanhanubrush-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: bold;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+1720-173F, U+1714, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-MangyanHanunoo-Hanubrush-Nordenx";
+				src: local("Baybayin Mangyan Hanubrush Regular"), /* full font name */
+						 local("Baybayin Mangyan Hanubrush"), /* full font name */
+						 local("BaybayinMangyanHanubrush"), /* Postscript name */
+						 url("/rsc/fonts/baybayinmangyanhanubrush-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/baybayinmangyanhanubrush-webfont.woff") format("woff"),
+						 url("/rsc/fonts/baybayinmangyanhanubrush-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: normal;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+1720-173F, U+1714, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-MangyanHanunoo-Hanubrush-Nordenx";
+				src: local("Baybayin Mangyan Hanubrush Regular"), /* full font name */
+						 local("Baybayin Mangyan Hanubrush"), /* full font name */
+						 local("BaybayinMangyanHanubrush"), /* Postscript name */
+						 url("/rsc/fonts/baybayinmangyanhanubrush-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/baybayinmangyanhanubrush-webfont.woff") format("woff"),
+						 url("/rsc/fonts/baybayinmangyanhanubrush-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+1720-173F, U+1714, U+20B1;
+			}
+		/* END: [Custom] Baybayin-MangyanHanunoo-Hanubrush-Nordenx */
 
-    /* BGN: [Custom] Baybayin-MangyanBuhid-Nordenx */
-      @font-face {
-        font-family: "Baybayin-MangyanBuhid-Nordenx";
-        src: local("Baybayin Mangyan Buhid Regular"), /* full font name */
-             local("Baybayin Mangyan Buhid"), /* full font name */
-             local("BaybayinMangyanBuhid"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: bold;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+1740-175F, U+1714, U+1734-1736, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-MangyanBuhid-Nordenx";
-        src: local("Baybayin Mangyan Buhid Regular"), /* full font name */
-             local("Baybayin Mangyan Buhid"), /* full font name */
-             local("BaybayinMangyanBuhid"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+1740-175F, U+1714, U+1734-1736, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-MangyanBuhid-Nordenx";
-        src: local("Baybayin Mangyan Buhid Regular"), /* full font name */
-             local("Baybayin Mangyan Buhid"), /* full font name */
-             local("BaybayinMangyanBuhid"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: normal;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+1740-175F, U+1714, U+1734-1736, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-MangyanBuhid-Nordenx";
-        src: local("Baybayin Mangyan Buhid Regular"), /* full font name */
-             local("Baybayin Mangyan Buhid"), /* full font name */
-             local("BaybayinMangyanBuhid"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/baybayinmangyanbuhid-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+1740-175F, U+1714, U+1734-1736, U+20B1;
-      }
-    /* END: [Custom] Baybayin-MangyanBuhid-Nordenx */
+		/* BGN: [Custom] Baybayin-MangyanBuhid-Nordenx */
+			@font-face {
+				font-family: "Baybayin-MangyanBuhid-Nordenx";
+				src: local("Baybayin Mangyan Buhid Regular"), /* full font name */
+						 local("Baybayin Mangyan Buhid"), /* full font name */
+						 local("BaybayinMangyanBuhid"), /* Postscript name */
+						 url("/rsc/fonts/baybayinmangyanbuhid-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/baybayinmangyanbuhid-webfont.woff") format("woff"),
+						 url("/rsc/fonts/baybayinmangyanbuhid-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: bold;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+1740-175F, U+1714, U+1734-1736, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-MangyanBuhid-Nordenx";
+				src: local("Baybayin Mangyan Buhid Regular"), /* full font name */
+						 local("Baybayin Mangyan Buhid"), /* full font name */
+						 local("BaybayinMangyanBuhid"), /* Postscript name */
+						 url("/rsc/fonts/baybayinmangyanbuhid-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/baybayinmangyanbuhid-webfont.woff") format("woff"),
+						 url("/rsc/fonts/baybayinmangyanbuhid-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: bold;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+1740-175F, U+1714, U+1734-1736, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-MangyanBuhid-Nordenx";
+				src: local("Baybayin Mangyan Buhid Regular"), /* full font name */
+						 local("Baybayin Mangyan Buhid"), /* full font name */
+						 local("BaybayinMangyanBuhid"), /* Postscript name */
+						 url("/rsc/fonts/baybayinmangyanbuhid-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/baybayinmangyanbuhid-webfont.woff") format("woff"),
+						 url("/rsc/fonts/baybayinmangyanbuhid-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: normal;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+1740-175F, U+1714, U+1734-1736, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-MangyanBuhid-Nordenx";
+				src: local("Baybayin Mangyan Buhid Regular"), /* full font name */
+						 local("Baybayin Mangyan Buhid"), /* full font name */
+						 local("BaybayinMangyanBuhid"), /* Postscript name */
+						 url("/rsc/fonts/baybayinmangyanbuhid-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/baybayinmangyanbuhid-webfont.woff") format("woff"),
+						 url("/rsc/fonts/baybayinmangyanbuhid-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+1740-175F, U+1714, U+1734-1736, U+20B1;
+			}
+		/* END: [Custom] Baybayin-MangyanBuhid-Nordenx */
 
-    /* BGN: [Custom] Baybayin-Tagbanwa-paninap */
-      /*
-      @font-face {
-        font-family: "Baybayin-Tagbanwa-paninap";
-        src: local(""), /* full font name
-             local(""), /* Postscript name
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.ttf") format("opentype");
-        font-display: swap;
-        -webkit-font-language-override: "PIL";
-                font-language-override: "PIL";
-        font-weight: bold;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+1760-177F, U+1714, U+1734-1736, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-Tagbanwa-paninap";
-        src: local(""), /* full font name
-             local(""), /* Postscript name
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.ttf") format("opentype");
-        font-display: swap;
-        -webkit-font-language-override: "PIL";
-                font-language-override: "PIL";
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+1760-177F, U+1714, U+1734-1736, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-Tagbanwa-paninap";
-        src: local(""), /* full font name
-             local(""), /* Postscript name
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.ttf") format("opentype");
-        font-display: swap;
-        -webkit-font-language-override: "PIL";
-                font-language-override: "PIL";
-        font-weight: normal;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+1760-177F, U+1714, U+1734-1736, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-Tagbanwa-paninap";
-        src: local(""), /* full font name
-             local(""), /* Postscript name
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/-webfont.ttf") format("opentype");
-        font-display: swap;
-        -webkit-font-language-override: "PIL";
-                font-language-override: "PIL";
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+1760-177F, U+1714, U+1734-1736, U+20B1;
-      }
-      */
-    /* END: [Custom] Baybayin-Tagbanwa-paninap */
+		/* BGN: [Custom] Baybayin-Tagbanwa-paninap */
+			/*
+			@font-face {
+				font-family: "Baybayin-Tagbanwa-paninap";
+				src: local(""), /* full font name
+						 local(""), /* Postscript name
+						 url("/rsc/fonts/-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/-webfont.woff") format("woff"),
+						 url("/rsc/fonts/-webfont.ttf") format("opentype");
+				font-display: swap;
+				-webkit-font-language-override: "PIL";
+								font-language-override: "PIL";
+				font-weight: bold;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+1760-177F, U+1714, U+1734-1736, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-Tagbanwa-paninap";
+				src: local(""), /* full font name
+						 local(""), /* Postscript name
+						 url("/rsc/fonts/-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/-webfont.woff") format("woff"),
+						 url("/rsc/fonts/-webfont.ttf") format("opentype");
+				font-display: swap;
+				-webkit-font-language-override: "PIL";
+								font-language-override: "PIL";
+				font-weight: bold;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+1760-177F, U+1714, U+1734-1736, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-Tagbanwa-paninap";
+				src: local(""), /* full font name
+						 local(""), /* Postscript name
+						 url("/rsc/fonts/-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/-webfont.woff") format("woff"),
+						 url("/rsc/fonts/-webfont.ttf") format("opentype");
+				font-display: swap;
+				-webkit-font-language-override: "PIL";
+								font-language-override: "PIL";
+				font-weight: normal;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+1760-177F, U+1714, U+1734-1736, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-Tagbanwa-paninap";
+				src: local(""), /* full font name
+						 local(""), /* Postscript name
+						 url("/rsc/fonts/-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/-webfont.woff") format("woff"),
+						 url("/rsc/fonts/-webfont.ttf") format("opentype");
+				font-display: swap;
+				-webkit-font-language-override: "PIL";
+								font-language-override: "PIL";
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+1760-177F, U+1714, U+1734-1736, U+20B1;
+			}
+			*/
+		/* END: [Custom] Baybayin-Tagbanwa-paninap */
 
-    /* BGN: [Custom] Barabara-Unicode-paninap */
-      @font-face {
-        font-family: "Barabara-Unicode-paninap";
-        src: local("BARABARA Regular"), /* full font name */
-             local("BARABARA"), /* full font name */
-             local("BARABARARegular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-weight: bold;
-        font-style: italic;
-        font-stretch: normal;
-      }
-      @font-face {
-        font-family: "Barabara-Unicode-paninap";
-        src: local("BARABARA Regular"), /* full font name */
-             local("BARABARA"), /* full font name */
-             local("BARABARARegular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-      }
-      @font-face {
-        font-family: "Barabara-Unicode-paninap";
-        src: local("BARABARA Regular"), /* full font name */
-             local("BARABARA"), /* full font name */
-             local("BARABARARegular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-weight: normal;
-        font-style: italic;
-        font-stretch: normal;
-      }
-      @font-face {
-        font-family: "Barabara-Unicode-paninap";
-        src: local("BARABARA Regular"), /* full font name */
-             local("BARABARA"), /* full font name */
-             local("BARABARARegular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/barabara-unicode-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-      }
-    /* BGN: [Custom] Barabara-Unicode-paninap */
-  /* END: RARELY USED */
-
-
-  /* BGN: Fallback Fonts */
-    /*****************************************************************************
-     * Baybayin Unicode Blocks: Noto Sans Tagalog + Hanunoo + Buhid + Tagbanwa   *
-     *   * Peso currency: U+20B1                                                 *
-     *                                                                           *
-     *   Tagalog: U+1700-171F                                                    *
-     *     * Punctuation: U+1714 -- virama                                       *
-     *   Hanunoo: U+1720-173F                                                    *
-     *     * Punctuation: U+1734-1736 -- pamudpod, comma, fullstop               *
-     *   Buhid: U+1740-175F                                                      *
-     *   Tagbanwa: U+1760-177F                                                   *
-     *****************************************************************************/
-    /* BGN: [Fallback] Baybayin-Tagbanwa-NotoSans */
-      @font-face {
-        font-family: "Baybayin-Tagbanwa-NotoSans";
-        src: local("Noto Sans Tagbanwa Regular"), /* full font name */
-             local("NotoSansTagbanwa-Regular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: bold;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+1760-177F, U+1714, U+1734-1736, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-Tagbanwa-NotoSans";
-        src: local("Noto Sans Tagbanwa Regular"), /* full font name */
-             local("NotoSansTagbanwa-Regular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+1760-177F, U+1714, U+1734-1736, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-Tagbanwa-NotoSans";
-        src: local("Noto Sans Tagbanwa Regular"), /* full font name */
-             local("NotoSansTagbanwa-Regular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: normal;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+1760-177F, U+1714, U+1734-1736, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-Tagbanwa-NotoSans";
-        src: local("Noto Sans Tagbanwa Regular"), /* full font name */
-             local("NotoSansTagbanwa-Regular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagbanwa-regular-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+1760-177F, U+1714, U+1734-1736, U+20B1;
-      }
-    /* END: [Fallback] Baybayin-Tagbanwa-NotoSans */
-
-    /* BGN: [Fallback] Baybayin-MangyanBuhid-NotoSans */
-      @font-face {
-        font-family: "Baybayin-MangyanBuhid-NotoSans";
-        src: local("Noto Sans Buhid Regular"), /* full font name */
-             local("NotoSansBuhid-Regular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: bold;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+1740-175F, U+1714, U+1734-1736, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-MangyanBuhid-NotoSans";
-        src: local("Noto Sans Buhid Regular"), /* full font name */
-             local("NotoSansBuhid-Regular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+1740-175F, U+1714, U+1734-1736, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-MangyanBuhid-NotoSans";
-        src: local("Noto Sans Buhid Regular"), /* full font name */
-             local("NotoSansBuhid-Regular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: normal;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+1740-175F, U+1714, U+1734-1736, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-MangyanBuhid-NotoSans";
-        src: local("Noto Sans Buhid Regular"), /* full font name */
-             local("NotoSansBuhid-Regular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansbuhid-regular-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+1740-175F, U+1714, U+1734-1736, U+20B1;
-      }
-    /* END: [Fallback] Baybayin-MangyanBuhid-NotoSans */
-
-    /* BGN: [Fallback] Baybayin-MangyanHanunoo-NotoSans */
-      @font-face {
-        font-family: "Baybayin-MangyanHanunoo-NotoSans";
-        src: local("Noto Sans Hanunoo Regular"), /* full font name */
-             local("NotoSansHanunoo-Regular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: bold;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+1720-173F, U+1714, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-MangyanHanunoo-NotoSans";
-        src: local("Noto Sans Hanunoo Regular"), /* full font name */
-             local("NotoSansHanunoo-Regular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+1720-173F, U+1714, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-MangyanHanunoo-NotoSans";
-        src: local("Noto Sans Hanunoo Regular"), /* full font name */
-             local("NotoSansHanunoo-Regular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: normal;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+1720-173F, U+1714, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-MangyanHanunoo-NotoSans";
-        src: local("Noto Sans Hanunoo Regular"), /* full font name */
-             local("NotoSansHanunoo-Regular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshanunoo-regular-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+1720-173F, U+1714, U+20B1;
-      }
-    /* END: [Fallback] Baybayin-MangyanHanunoo-NotoSans */
-
-    /* BGN: [Fallback] Baybayin-Tagalog-NotoSans */
-      @font-face {
-        font-family: "Baybayin-Tagalog-NotoSans";
-        src: local("Noto Sans Tagalog Regular"), /* full font name */
-             local("NotoSansTagalog-Regular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: bold;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+1700-171F, U+1734-1736, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-Tagalog-NotoSans";
-        src: local("Noto Sans Tagalog Regular"), /* full font name */
-             local("NotoSansTagalog-Regular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+1700-171F, U+1734-1736, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-Tagalog-NotoSans";
-        src: local("Noto Sans Tagalog Regular"), /* full font name */
-             local("NotoSansTagalog-Regular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: normal;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+1700-171F, U+1734-1736, U+20B1;
-      }
-      @font-face {
-        font-family: "Baybayin-Tagalog-NotoSans";
-        src: local("Noto Sans Tagalog Regular"), /* full font name */
-             local("NotoSansTagalog-Regular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanstagalog-regular-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "PIL";
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+1700-171F, U+1734-1736, U+20B1;
-      }
-    /* END: [Fallback] Baybayin-Tagalog-NotoSans */
-
-    /* BGN: [Fallback] Hebrew-Modern-NotoSans */
-      @font-face {
-        font-family: "Hebrew-Modern-NotoSans";
-        src: local("Noto Sans Hebrew Bold"), /* full font name */
-             local("NotoSansHebrew-Bold"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-bold-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-bold-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-bold-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "IWR";
-        font-weight: bold;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+0590-05FF, U+FB1D-FB4F;
-      }
-      @font-face {
-        font-family: "Hebrew-Modern-NotoSans";
-        src: local("Noto Sans Hebrew Bold"), /* full font name */
-             local("NotoSansHebrew-Bold"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-bold-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-bold-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-bold-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "IWR";
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+0590-05FF, U+FB1D-FB4F;
-      }
-      @font-face {
-        font-family: "Hebrew-Modern-NotoSans";
-        src: local("Noto Sans Hebrew"), /* full font name */
-             local("NotoSansHebrew"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-regular-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-regular-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-regular-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "IWR";
-        font-weight: normal;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+0590-05FF, U+FB1D-FB4F;
-      }
-      @font-face {
-        font-family: "Hebrew-Modern-NotoSans";
-        src: local("Noto Sans Hebrew"), /* full font name */
-             local("NotoSansHebrew"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-regular-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-regular-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosanshebrew-regular-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "IWR";
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+0590-05FF, U+FB1D-FB4F;
-      }
-    /* END: [Fallback] Hebrew-Modern-NotoSans */
-
-    /* BGN: [Fallback] Hebrew-Phoenician-NotoSans */
-      @font-face {
-        font-family: "Hebrew-Phoenician-NotoSans";
-        src: local("Noto Sans Phoenician Regular"), /* full font name */
-             local("NotoSansPhoenician-Regular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "IWR";
-        font-weight: bold;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+10900-1091F;
-      }
-      @font-face {
-        font-family: "Hebrew-Phoenician-NotoSans";
-        src: local("Noto Sans Phoenician Regular"), /* full font name */
-             local("NotoSansPhoenician-Regular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "IWR";
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+10900-1091F;
-      }
-      @font-face {
-        font-family: "Hebrew-Phoenician-NotoSans";
-        src: local("Noto Sans Phoenician Regular"), /* full font name */
-             local("NotoSansPhoenician-Regular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "IWR";
-        font-weight: normal;
-        font-style: italic;
-        font-stretch: normal;
-        unicode-range: U+10900-1091F;
-      }
-      @font-face {
-        font-family: "Hebrew-Phoenician-NotoSans";
-        src: local("Noto Sans Phoenician Regular"), /* full font name */
-             local("NotoSansPhoenician-Regular"), /* Postscript name */
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.woff2") format("woff2"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.woff") format("woff"),
-             url("https://yelosanpub.laibcoms.com/rsc/fonts/notosansphoenician-regular-webfont.ttf") format("opentype");
-        font-display: swap;
-        font-language-override: "IWR";
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        unicode-range: U+10900-1091F;
-      }
-    /* END: [Fallback] Hebrew-Phoenician-NotoSans */
-  /* END: Fallback Fonts */
+		/* BGN: [Custom] Barabara-Unicode-paninap */
+			@font-face {
+				font-family: "Barabara-Unicode-paninap";
+				src: local("BARABARA Regular"), /* full font name */
+						 local("BARABARA"), /* full font name */
+						 local("BARABARARegular"), /* Postscript name */
+						 url("/rsc/fonts/barabara-unicode-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/barabara-unicode-webfont.woff") format("woff"),
+						 url("/rsc/fonts/barabara-unicode-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-weight: bold;
+				font-style: italic;
+				font-stretch: normal;
+			}
+			@font-face {
+				font-family: "Barabara-Unicode-paninap";
+				src: local("BARABARA Regular"), /* full font name */
+						 local("BARABARA"), /* full font name */
+						 local("BARABARARegular"), /* Postscript name */
+						 url("/rsc/fonts/barabara-unicode-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/barabara-unicode-webfont.woff") format("woff"),
+						 url("/rsc/fonts/barabara-unicode-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-weight: bold;
+				font-style: normal;
+				font-stretch: normal;
+			}
+			@font-face {
+				font-family: "Barabara-Unicode-paninap";
+				src: local("BARABARA Regular"), /* full font name */
+						 local("BARABARA"), /* full font name */
+						 local("BARABARARegular"), /* Postscript name */
+						 url("/rsc/fonts/barabara-unicode-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/barabara-unicode-webfont.woff") format("woff"),
+						 url("/rsc/fonts/barabara-unicode-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-weight: normal;
+				font-style: italic;
+				font-stretch: normal;
+			}
+			@font-face {
+				font-family: "Barabara-Unicode-paninap";
+				src: local("BARABARA Regular"), /* full font name */
+						 local("BARABARA"), /* full font name */
+						 local("BARABARARegular"), /* Postscript name */
+						 url("/rsc/fonts/barabara-unicode-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/barabara-unicode-webfont.woff") format("woff"),
+						 url("/rsc/fonts/barabara-unicode-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+			}
+		/* BGN: [Custom] Barabara-Unicode-paninap */
+	/* END: RARELY USED */
 
 
-  /* BGN: LANG */
-    /*
-     * Have to specifically define direction and select font descriptors
-     * Some themes and browsers are not displaying the fonts correctly
-     */
-    /* BGN: Catch all Japanese lang */
-      /* :lang("ja-*"), */
-      :lang(ja) {
-        /* direction: ltr; */
-        font-variant-east-asian: jis78 proportional-width;
-        font-language-override: JAN;
-        /* font-size: larger; */
-      }
-    /* END: Catch all Japanese lang */
+	/* BGN: Fallback Fonts */
+		/*****************************************************************************
+		 * Baybayin Unicode Blocks: Noto Sans Tagalog + Hanunoo + Buhid + Tagbanwa   *
+		 *   * Peso currency: U+20B1                                                 *
+		 *                                                                           *
+		 *   Tagalog: U+1700-171F                                                    *
+		 *     * Punctuation: U+1714 -- virama                                       *
+		 *   Hanunoo: U+1720-173F                                                    *
+		 *     * Punctuation: U+1734-1736 -- pamudpod, comma, fullstop               *
+		 *   Buhid: U+1740-175F                                                      *
+		 *   Tagbanwa: U+1760-177F                                                   *
+		 *****************************************************************************/
+		/* BGN: [Fallback] Baybayin-Tagbanwa-NotoSans */
+			@font-face {
+				font-family: "Baybayin-Tagbanwa-NotoSans";
+				src: local("Noto Sans Tagbanwa Regular"), /* full font name */
+						 local("NotoSansTagbanwa-Regular"), /* Postscript name */
+						 url("/rsc/fonts/notosanstagbanwa-regular-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosanstagbanwa-regular-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosanstagbanwa-regular-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: bold;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+1760-177F, U+1714, U+1734-1736, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-Tagbanwa-NotoSans";
+				src: local("Noto Sans Tagbanwa Regular"), /* full font name */
+						 local("NotoSansTagbanwa-Regular"), /* Postscript name */
+						 url("/rsc/fonts/notosanstagbanwa-regular-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosanstagbanwa-regular-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosanstagbanwa-regular-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: bold;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+1760-177F, U+1714, U+1734-1736, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-Tagbanwa-NotoSans";
+				src: local("Noto Sans Tagbanwa Regular"), /* full font name */
+						 local("NotoSansTagbanwa-Regular"), /* Postscript name */
+						 url("/rsc/fonts/notosanstagbanwa-regular-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosanstagbanwa-regular-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosanstagbanwa-regular-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: normal;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+1760-177F, U+1714, U+1734-1736, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-Tagbanwa-NotoSans";
+				src: local("Noto Sans Tagbanwa Regular"), /* full font name */
+						 local("NotoSansTagbanwa-Regular"), /* Postscript name */
+						 url("/rsc/fonts/notosanstagbanwa-regular-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosanstagbanwa-regular-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosanstagbanwa-regular-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+1760-177F, U+1714, U+1734-1736, U+20B1;
+			}
+		/* END: [Fallback] Baybayin-Tagbanwa-NotoSans */
 
-    /* BGN: Catch all Chinese (trad) lang */
-      /* :lang("zh-*"), */
-      :lang(zh) {
-        font-variant-east-asian: traditional proportional-width;
-        font-language-override: ZHT;
-        /* font-size: larger; */
-      }
-    /* END: Catch all Chinese (trad) lang */
+		/* BGN: [Fallback] Baybayin-MangyanBuhid-NotoSans */
+			@font-face {
+				font-family: "Baybayin-MangyanBuhid-NotoSans";
+				src: local("Noto Sans Buhid Regular"), /* full font name */
+						 local("NotoSansBuhid-Regular"), /* Postscript name */
+						 url("/rsc/fonts/notosansbuhid-regular-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosansbuhid-regular-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosansbuhid-regular-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: bold;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+1740-175F, U+1714, U+1734-1736, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-MangyanBuhid-NotoSans";
+				src: local("Noto Sans Buhid Regular"), /* full font name */
+						 local("NotoSansBuhid-Regular"), /* Postscript name */
+						 url("/rsc/fonts/notosansbuhid-regular-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosansbuhid-regular-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosansbuhid-regular-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: bold;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+1740-175F, U+1714, U+1734-1736, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-MangyanBuhid-NotoSans";
+				src: local("Noto Sans Buhid Regular"), /* full font name */
+						 local("NotoSansBuhid-Regular"), /* Postscript name */
+						 url("/rsc/fonts/notosansbuhid-regular-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosansbuhid-regular-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosansbuhid-regular-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: normal;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+1740-175F, U+1714, U+1734-1736, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-MangyanBuhid-NotoSans";
+				src: local("Noto Sans Buhid Regular"), /* full font name */
+						 local("NotoSansBuhid-Regular"), /* Postscript name */
+						 url("/rsc/fonts/notosansbuhid-regular-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosansbuhid-regular-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosansbuhid-regular-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+1740-175F, U+1714, U+1734-1736, U+20B1;
+			}
+		/* END: [Fallback] Baybayin-MangyanBuhid-NotoSans */
 
-    /* BGN: Catch all PH langs and scripts */
-      :lang(en-PH), /* :lang(*-PH), */
-      :lang(phi), :lang(fil),
-      :lang(tbw), :lang(bku), :lang(hnn), :lang(tl), :lang(tgl) {
-        direction: ltr;
-        font-language-override: "PIL";
-      }
-    /* END: Catch all PH langs and scripts */
+		/* BGN: [Fallback] Baybayin-MangyanHanunoo-NotoSans */
+			@font-face {
+				font-family: "Baybayin-MangyanHanunoo-NotoSans";
+				src: local("Noto Sans Hanunoo Regular"), /* full font name */
+						 local("NotoSansHanunoo-Regular"), /* Postscript name */
+						 url("/rsc/fonts/notosanshanunoo-regular-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosanshanunoo-regular-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosanshanunoo-regular-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: bold;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+1720-173F, U+1714, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-MangyanHanunoo-NotoSans";
+				src: local("Noto Sans Hanunoo Regular"), /* full font name */
+						 local("NotoSansHanunoo-Regular"), /* Postscript name */
+						 url("/rsc/fonts/notosanshanunoo-regular-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosanshanunoo-regular-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosanshanunoo-regular-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: bold;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+1720-173F, U+1714, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-MangyanHanunoo-NotoSans";
+				src: local("Noto Sans Hanunoo Regular"), /* full font name */
+						 local("NotoSansHanunoo-Regular"), /* Postscript name */
+						 url("/rsc/fonts/notosanshanunoo-regular-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosanshanunoo-regular-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosanshanunoo-regular-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: normal;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+1720-173F, U+1714, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-MangyanHanunoo-NotoSans";
+				src: local("Noto Sans Hanunoo Regular"), /* full font name */
+						 local("NotoSansHanunoo-Regular"), /* Postscript name */
+						 url("/rsc/fonts/notosanshanunoo-regular-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosanshanunoo-regular-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosanshanunoo-regular-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+1720-173F, U+1714, U+20B1;
+			}
+		/* END: [Fallback] Baybayin-MangyanHanunoo-NotoSans */
 
-    /* BGN: Catch all PH (original) scripts */
-      :lang(tbw-Tagb), :lang(bku-Buhd), :lang(hnn-Hano), :lang(tl-Tglg), :lang(tgl-Tglg)
-      /* :lang(*-Tagb), :lang(*-Buhd), :lang(*-Hano), :lang(*-Tglg) */
-      {
-        font-variant-east-asian: full-width;
-        font-size: larger;
-      }
-    /* END: Catch all PH (original) scripts */
+		/* BGN: [Fallback] Baybayin-Tagalog-NotoSans */
+			@font-face {
+				font-family: "Baybayin-Tagalog-NotoSans";
+				src: local("Noto Sans Tagalog Regular"), /* full font name */
+						 local("NotoSansTagalog-Regular"), /* Postscript name */
+						 url("/rsc/fonts/notosanstagalog-regular-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosanstagalog-regular-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosanstagalog-regular-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: bold;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+1700-171F, U+1734-1736, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-Tagalog-NotoSans";
+				src: local("Noto Sans Tagalog Regular"), /* full font name */
+						 local("NotoSansTagalog-Regular"), /* Postscript name */
+						 url("/rsc/fonts/notosanstagalog-regular-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosanstagalog-regular-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosanstagalog-regular-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: bold;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+1700-171F, U+1734-1736, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-Tagalog-NotoSans";
+				src: local("Noto Sans Tagalog Regular"), /* full font name */
+						 local("NotoSansTagalog-Regular"), /* Postscript name */
+						 url("/rsc/fonts/notosanstagalog-regular-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosanstagalog-regular-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosanstagalog-regular-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: normal;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+1700-171F, U+1734-1736, U+20B1;
+			}
+			@font-face {
+				font-family: "Baybayin-Tagalog-NotoSans";
+				src: local("Noto Sans Tagalog Regular"), /* full font name */
+						 local("NotoSansTagalog-Regular"), /* Postscript name */
+						 url("/rsc/fonts/notosanstagalog-regular-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosanstagalog-regular-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosanstagalog-regular-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "PIL";
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+1700-171F, U+1734-1736, U+20B1;
+			}
+		/* END: [Fallback] Baybayin-Tagalog-NotoSans */
 
-    /* BGN: Catch all Greek langs and scripts */
-      :lang(el), :lang(gre), :lang(ell) {
-        direction: ltr;
-      }
-    /* END: Catch all Greek langs and scripts */
+		/* BGN: [Fallback] Hebrew-Modern-NotoSans */
+			@font-face {
+				font-family: "Hebrew-Modern-NotoSans";
+				src: local("Noto Sans Hebrew Bold"), /* full font name */
+						 local("NotoSansHebrew-Bold"), /* Postscript name */
+						 url("/rsc/fonts/notosanshebrew-bold-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosanshebrew-bold-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosanshebrew-bold-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "IWR";
+				font-weight: bold;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+0590-05FF, U+FB1D-FB4F;
+			}
+			@font-face {
+				font-family: "Hebrew-Modern-NotoSans";
+				src: local("Noto Sans Hebrew Bold"), /* full font name */
+						 local("NotoSansHebrew-Bold"), /* Postscript name */
+						 url("/rsc/fonts/notosanshebrew-bold-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosanshebrew-bold-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosanshebrew-bold-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "IWR";
+				font-weight: bold;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+0590-05FF, U+FB1D-FB4F;
+			}
+			@font-face {
+				font-family: "Hebrew-Modern-NotoSans";
+				src: local("Noto Sans Hebrew"), /* full font name */
+						 local("NotoSansHebrew"), /* Postscript name */
+						 url("/rsc/fonts/notosanshebrew-regular-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosanshebrew-regular-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosanshebrew-regular-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "IWR";
+				font-weight: normal;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+0590-05FF, U+FB1D-FB4F;
+			}
+			@font-face {
+				font-family: "Hebrew-Modern-NotoSans";
+				src: local("Noto Sans Hebrew"), /* full font name */
+						 local("NotoSansHebrew"), /* Postscript name */
+						 url("/rsc/fonts/notosanshebrew-regular-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosanshebrew-regular-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosanshebrew-regular-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "IWR";
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+0590-05FF, U+FB1D-FB4F;
+			}
+		/* END: [Fallback] Hebrew-Modern-NotoSans */
 
-    /* BGN: Catch all Greek (ancient) scripts */
-      :lang(grc) {
-        direction: ltr;
-      }
-    /* END: Catch all Greek (ancient) scripts */
+		/* BGN: [Fallback] Hebrew-Phoenician-NotoSans */
+			@font-face {
+				font-family: "Hebrew-Phoenician-NotoSans";
+				src: local("Noto Sans Phoenician Regular"), /* full font name */
+						 local("NotoSansPhoenician-Regular"), /* Postscript name */
+						 url("/rsc/fonts/notosansphoenician-regular-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosansphoenician-regular-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosansphoenician-regular-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "IWR";
+				font-weight: bold;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+10900-1091F;
+			}
+			@font-face {
+				font-family: "Hebrew-Phoenician-NotoSans";
+				src: local("Noto Sans Phoenician Regular"), /* full font name */
+						 local("NotoSansPhoenician-Regular"), /* Postscript name */
+						 url("/rsc/fonts/notosansphoenician-regular-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosansphoenician-regular-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosansphoenician-regular-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "IWR";
+				font-weight: bold;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+10900-1091F;
+			}
+			@font-face {
+				font-family: "Hebrew-Phoenician-NotoSans";
+				src: local("Noto Sans Phoenician Regular"), /* full font name */
+						 local("NotoSansPhoenician-Regular"), /* Postscript name */
+						 url("/rsc/fonts/notosansphoenician-regular-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosansphoenician-regular-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosansphoenician-regular-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "IWR";
+				font-weight: normal;
+				font-style: italic;
+				font-stretch: normal;
+				unicode-range: U+10900-1091F;
+			}
+			@font-face {
+				font-family: "Hebrew-Phoenician-NotoSans";
+				src: local("Noto Sans Phoenician Regular"), /* full font name */
+						 local("NotoSansPhoenician-Regular"), /* Postscript name */
+						 url("/rsc/fonts/notosansphoenician-regular-webfont.woff2") format("woff2"),
+						 url("/rsc/fonts/notosansphoenician-regular-webfont.woff") format("woff"),
+						 url("/rsc/fonts/notosansphoenician-regular-webfont.ttf") format("opentype");
+				font-display: swap;
+				font-language-override: "IWR";
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				unicode-range: U+10900-1091F;
+			}
+		/* END: [Fallback] Hebrew-Phoenician-NotoSans */
+	/* END: Fallback Fonts */
 
-    /* BGN: Catch all Hebrew langs and scripts */
-      :lang(he), :lang(heb), :lang(hbo) {
-        direction: rtl;
-        font-language-override: "IWR";
-      }
-    /* END: Catch all Hebrew langs and scripts */
 
-    /* BGN: Catch all Hebrew (original) scripts */
-      :lang(hbo-Hebr)
-      /* :lang(*-Hebr) */
-      {
-        font-size: larger;
-      }
-    /* END: Catch all Hebrew (original) scripts */
+	/* BGN: LANG */
+		/*
+		 * Have to specifically define direction and select font descriptors
+		 * Some themes and browsers are not displaying the fonts correctly
+		 */
+		/* BGN: Catch all Japanese lang */
+			/* :lang("ja-*"), */
+			:lang(ja) {
+				/* direction: ltr; */
+				font-variant-east-asian: jis78 proportional-width;
+				font-language-override: JAN;
+				/* font-size: larger; */
+			}
+		/* END: Catch all Japanese lang */
 
-    /* BGN: Define font-family */
-      /*
-       * font-family: 'Noto Sans', sans-serif;
-       * font-family: 'Noto Sans HK', sans-serif;
-       * font-family: 'Noto Sans JP', sans-serif;
-       * font-family: 'Noto Sans KR', sans-serif;
-       * font-family: 'Noto Sans TC', sans-serif;
-       * font-family: 'Noto Serif', serif;
-       * font-family: 'Noto Serif JP', serif;
-       * font-family: 'Noto Serif KR', serif;
-       * font-family: 'Noto Serif TC', serif;
-       *
-       * Also see: https://www.google.com/get/noto/help/guidelines/
-      **/
-      :lang(en) {
-        /* font-family: "Noto Sans"; */ /* Force override */
-      }
-      :lang(ja) { /* Japanese */
-        font-family: "Noto Sans", "Noto Sans CJK JP", "Noto Sans JP"; /* Force override */
-        font-synthesis: none;
-      }
-      :lang(ja-Latn) {
-        font-family: inherit;
-        font-synthesis: initial;
-      }
-      :lang(zh) { /* Traditional Chinese with Hong Kong first */
-        font-family:  "Noto Sans", "Noto Sans HK", "Noto Sans CJK TC"; /* Force override */
-        font-synthesis: none;
-      }
-      :lang(zh-Latn) {
-        font-family: inherit;
-        font-synthesis: initial;
-      }
-      :lang(phi-Tagb), :lang(fil-Tagb), :lang(tbw-Tagb)
-      /* :lang(*-Tagb) */
-      { /* Baybayin-Tagbanwa */
-        font-family: "Baybayin-Tagbanwa-NotoSans";
-        /* font-family: "Baybayin-Tagbanwa-paninap", "Baybayin-Tagbanwa-NotoSans"; */
-        font-synthesis: none;
-      }
-      :lang(phi-Buhd), :lang(fil-Buhd), :lang(bku-Buhd)
-      /* :lang(*-Buhd) */
-      { /* Baybayin-Buhid */
-        font-family: "Baybayin-MangyanBuhid-NotoSans";
-        /* font-family: "Baybayin-MangyanBuhid-Nordenx", "Baybayin-MangyanBuhid-NotoSans"; */
-        font-synthesis: none;
-      }
-      :lang(phi-Hano), :lang(fil-Hano), :lang(hnn-Hano)
-      /* :lang(*-Hano) */
-      { /* Baybayin-Hanunoó */
-        font-family: "Baybayin-MangyanHanunoo-NotoSans";
-        /* font-family: "Baybayin-MangyanHanunoo-Hanubrush-Nordenx", "Baybayin-MangyanHanunoo-NotoSans"; */
-        font-synthesis: none;
-      }
-      :lang(phi-Tglg), :lang(fil-Tglg), :lang(tl-Tglg), :lang(tgl-Tglg)
-      /* lang(*-Tglg) */
-      { /* Baybayin-Tagalog */
-        font-family: "Baybayin-Tagalog-NotoSans";
-        /* font-family: "Baybayin-Tagalog-ModernClub-Nordenx", "Baybayin-Tagalog-NotoSans"; */
-        font-synthesis: none;
-      }
-      :lang(el), :lang(gre), :lang(ell) { /* Modern Greek */
-        /* font-family: ""; */ /* Force override */
-        font-synthesis: none;
-      }
-      :lang(el-Latn), :lang(gre-Latn), :lang(ell-Latn) {
-        direction: ltr;
-        font-family: inherit;
-        font-synthesis: initial;
-      }
-      :lang(grc) { /* Ancient/Kohen Greek */
-        /* font-family: ""; */ /* Force override */
-        font-synthesis: none;
-      }
-      :lang(grc-Latn) {
-        direction: ltr;
-        font-family: inherit;
-        font-synthesis: initial;
-      }
+		/* BGN: Catch all Chinese (trad) lang */
+			/* :lang("zh-*"), */
+			:lang(zh) {
+				font-variant-east-asian: traditional proportional-width;
+				font-language-override: ZHT;
+				/* font-size: larger; */
+			}
+		/* END: Catch all Chinese (trad) lang */
 
-      :lang(he), :lang(heb) { /* Modern Hebrew */
-        font-family: "Hebrew-Modern-NotoSans"; /* Force override */
-        font-synthesis: none;
-      }
-      :lang(he-Latn), :lang(heb-Latn) {
-        direction: ltr;
-        font-family: inherit;
-        font-synthesis: initial;
-      }
-      :lang(hbo) { /* Ancient Hebrew / Phoenician */
-        font-family: "Hebrew-Paleo-Gezer-Unicode", "Hebrew-Phoenician-NotoSans";
-        font-synthesis: none;
-      }
-      :lang(hbo-Latn) {
-        direction: ltr;
-        font-family: inherit;
-        font-synthesis: initial;
-      }
-    /* END: Define font-family */
+		/* BGN: Catch all PH langs and scripts */
+			:lang(en-PH), /* :lang(*-PH), */
+			:lang(phi), :lang(fil),
+			:lang(tbw), :lang(bku), :lang(hnn), :lang(tl), :lang(tgl) {
+				direction: ltr;
+				font-language-override: "PIL";
+			}
+		/* END: Catch all PH langs and scripts */
 
-    .reset-1_25em { /* e.g. use for -Tglg and -Hebr scripts when there are Latin-scripts within the same element */
-      font-size: 0.8em;
-    }
-  /* END: LANG */
+		/* BGN: Catch all PH (original) scripts */
+			:lang(tbw-Tagb), :lang(bku-Buhd), :lang(hnn-Hano), :lang(tl-Tglg), :lang(tgl-Tglg)
+			/* :lang(*-Tagb), :lang(*-Buhd), :lang(*-Hano), :lang(*-Tglg) */
+			{
+				font-variant-east-asian: full-width;
+				/* font-size: larger; */
+			}
+		/* END: Catch all PH (original) scripts */
 
-  /**
-   * Font classes for override, and in rare cases, to force the font to an element.
-   *   Examples:
-   *     1. Templates with explicit font-face for selected elements
-   *     2. Header elements (<h1,2,3,4,5>) -- could be theme-based also
-   *
-   * Baybayin: Baybayin Modern club > Noto Sans Tagalog
-   * Paleo Hebrew: Paleo Hebrew > Ancient Hebrew > Noto Sans Phoenician
-   * Modern Hebrew: Modern Hebrew = Noto Sans Hebrew
-   *
-   * "direction" has to be added to cover all styling practices
-  **/
+		/* BGN: Catch all Greek langs and scripts */
+			:lang(el), :lang(gre), :lang(ell) {
+				direction: ltr;
+			}
+		/* END: Catch all Greek langs and scripts */
 
-    /* BGN: NotoSans */
-      .font-NotoSans {
-        /* direction: ltr; */
-        font-family: "Noto Sans";
-      }
-      .font-Baybayin-Tagbanwa-NotoSans {
-        direction: ltr;
-        font-family: "Baybayin-Tagbanwa-NotoSans";
-        font-synthesis: none;
-      }
-      .font-Baybayin-MangyanBuhid-NotoSans {
-        direction: ltr;
-        font-family: "Baybayin-MangyanBuhid-NotoSans";
-        font-synthesis: none;
-      }
-      .font-Baybayin-MangyanHanunoo-NotoSans {
-        direction: ltr;
-        font-family: "Baybayin-MangyanHanunoo-NotoSans";
-        font-synthesis: none;
-      }
-      .font-Baybayin-Tagalog-NotoSans {
-        direction: ltr;
-        font-family: "Baybayin-Tagalog-NotoSans";
-        font-synthesis: none;
-      }
-      .font-Greek-Modern-NotoSans {
-        direction: ltr;
-        font-family: "Noto Sans";
-        font-synthesis: none;
-      }
-      .font-Greek-Ancient-NotoSans {
-        direction: ltr;
-        font-family: "Noto Sans";
-        font-synthesis: none;
-      }
-      .font-Hebrew-Modern-NotoSans {
-        direction: rtl;
-        font-family: "Hebrew-Modern-NotoSans";
-        font-synthesis: none;
-      }
-      .font-Hebrew-Phoenician-NotoSans {
-        direction: rtl;
-        font-family: "Hebrew-Phoenician-NotoSans";
-        font-synthesis: none;
-      }
-    /* END: NotoSans */
+		/* BGN: Catch all Greek (ancient) scripts */
+			:lang(grc) {
+				direction: ltr;
+			}
+		/* END: Catch all Greek (ancient) scripts */
 
-    /* BGN: Custom + fallback_NotoSans */
-      .font-Baybayin-Tagbanwa-paninap {
-        direction: ltr;
-        font-family: "Baybayin-Tagbanwa-paninap", "Baybayin-Tagbanwa-NotoSans";
-        font-synthesis: none;
-      }
-      .font-Baybayin-MangyanBuhid-Nordenx {
-        direction: ltr;
-        font-family: "Baybayin-MangyanBuhid-Nordenx", "Baybayin-MangyanBuhid-NotoSans";
-        font-synthesis: none;
-      }
-      .font-Baybayin-MangyanHanunoo-Habubrush-Nordenx {
-        direction: ltr;
-        font-family: "Baybayin-MangyanHanunoo-Hanubrush-Nordenx", "Baybayin-MangyanHanunoo-NotoSans";
-        font-synthesis: none;
-      }
-      .font-Baybayin-Tagalog-ModernClub-Nordenx {
-        direction: ltr;
-        font-family: "Baybayin-Tagalog-ModernClub-Nordenx", "Baybayin-Tagalog-NotoSans";
-        font-synthesis: none;
-      }
-      .font-Hebrew-Paleo-Gezer-Unicode {
-        direction: rtl;
-        font-family: "Hebrew-Paleo-Gezer-Unicode", "Hebrew-Phoenician-NotoSans";
-        font-synthesis: none;
-      }
-      .font-Hebrew-Proto-Canaanite-Unicode {
-        direction: rtl;
-        font-family: "Hebrew-Proto-Canaanite-Unicode", "Hebrew-Paleo-Gezer-Unicode", "Hebrew-Phoenician-NotoSans";
-        font-synthesis: none;
-      }
-    /* END: Custom + fallback_NotoSans */
+		/* BGN: Catch all Hebrew langs and scripts */
+			:lang(he), :lang(heb), :lang(hbo) {
+				direction: rtl;
+				font-language-override: "IWR";
+			}
+		/* END: Catch all Hebrew langs and scripts */
 
-    .font-Barabara-Unicode-paninap {
-      direction: ltr;
-      font-family: "Barabara-Unicode-paninap", fantasy;
-    }
+		/* BGN: Catch all Hebrew (original) scripts */
+			:lang(hbo-Hebr)
+			/* :lang(*-Hebr) */
+			{
+				/* font-size: larger; */
+			}
+		/* END: Catch all Hebrew (original) scripts */
 
-  /* Unicode emoji */
-    /* We need to add !important to guarantee default third-party theme styles won't affect our emojis. */
-    /*
-    [class^="smiley-" i], [class$="-smiley" i],
-    [class^="emoticon-" i], [class$="-emoticon" i],
-    [class^="emoji-" i], [class$="-emoji" i],
-    [class*="emoji-" i], [class*="-emoji" i],
-    */
-    [class~="smiley" i], [class~="emoticon" i], [class~="emoji" i] {
-      display: inline !important;
-      background: none !important;
-      border: none !important;
-      box-shadow: none !important;
-      height: 1em !important;
-      width: 1em !important;
-      /* margin: 0 .07em 0 .1em !important; */
-      margin: 0 !important;
-      padding: 0 !important;
-      /* vertical-align: -0.1em !important; */
-      vertical-align: text-bottom !important;
-      font-family: emoji;
-      font-variant-emoji: emoji;
-      font-synthesis: none;
-    }
-    .unicode_emoji { /* usage: <span class="unicode_emoji">emoji_here</span> */
-      font-family: "Emoji-Twemoji-Color-SVGinOT", "Twitter Color Emoji", "Twemoji", emoji;
-      font-variant-emoji: emoji;
-      font-size: larger;
-      font-synthesis: none;
-    }
-    .unicode_emoji_test {
-      font-size: 2.5rem;
-    }
+		/* BGN: Define font-family */
+			/*
+			 * font-family: 'Noto Sans', sans-serif;
+			 * font-family: 'Noto Sans HK', sans-serif;
+			 * font-family: 'Noto Sans JP', sans-serif;
+			 * font-family: 'Noto Sans KR', sans-serif;
+			 * font-family: 'Noto Sans TC', sans-serif;
+			 * font-family: 'Noto Serif', serif;
+			 * font-family: 'Noto Serif JP', serif;
+			 * font-family: 'Noto Serif KR', serif;
+			 * font-family: 'Noto Serif TC', serif;
+			 *
+			 * Also see: https://www.google.com/get/noto/help/guidelines/
+			**/
+			:lang(en) {
+				/* font-family: "Noto Sans"; */ /* Force override */
+			}
+			:lang(ja) { /* Japanese */
+				font-family: "Noto Sans", "Noto Sans CJK JP", "Noto Sans JP"; /* Force override */
+				font-synthesis: none;
+			}
+			:lang(ja-Latn) {
+				font-family: inherit;
+				font-synthesis: initial;
+			}
+			:lang(zh) { /* Traditional Chinese with Hong Kong first */
+				font-family:  "Noto Sans", "Noto Sans HK", "Noto Sans CJK TC"; /* Force override */
+				font-synthesis: none;
+			}
+			:lang(zh-Latn) {
+				font-family: inherit;
+				font-synthesis: initial;
+			}
+			:lang(phi-Tagb), :lang(fil-Tagb), :lang(tbw-Tagb)
+			/* :lang(*-Tagb) */
+			{ /* Baybayin-Tagbanwa */
+				font-family: "Baybayin-Tagbanwa-NotoSans";
+				/* font-family: "Baybayin-Tagbanwa-paninap", "Baybayin-Tagbanwa-NotoSans"; */
+				font-synthesis: none;
+			}
+			:lang(phi-Buhd), :lang(fil-Buhd), :lang(bku-Buhd)
+			/* :lang(*-Buhd) */
+			{ /* Baybayin-Buhid */
+				font-family: "Baybayin-MangyanBuhid-NotoSans";
+				/* font-family: "Baybayin-MangyanBuhid-Nordenx", "Baybayin-MangyanBuhid-NotoSans"; */
+				font-synthesis: none;
+			}
+			:lang(phi-Hano), :lang(fil-Hano), :lang(hnn-Hano)
+			/* :lang(*-Hano) */
+			{ /* Baybayin-Hanunoó */
+				font-family: "Baybayin-MangyanHanunoo-NotoSans";
+				/* font-family: "Baybayin-MangyanHanunoo-Hanubrush-Nordenx", "Baybayin-MangyanHanunoo-NotoSans"; */
+				font-synthesis: none;
+			}
+			:lang(phi-Tglg), :lang(fil-Tglg), :lang(tl-Tglg), :lang(tgl-Tglg)
+			/* lang(*-Tglg) */
+			{ /* Baybayin-Tagalog */
+				font-family: "Baybayin-Tagalog-NotoSans";
+				/* font-family: "Baybayin-Tagalog-ModernClub-Nordenx", "Baybayin-Tagalog-NotoSans"; */
+				font-synthesis: none;
+			}
+			:lang(el), :lang(gre), :lang(ell) { /* Modern Greek */
+				/* font-family: ""; */ /* Force override */
+				font-synthesis: none;
+			}
+			:lang(el-Latn), :lang(gre-Latn), :lang(ell-Latn) {
+				direction: ltr;
+				font-family: inherit;
+				font-synthesis: initial;
+			}
+			:lang(grc) { /* Ancient/Kohen Greek */
+				/* font-family: ""; */ /* Force override */
+				font-synthesis: none;
+			}
+			:lang(grc-Latn) {
+				direction: ltr;
+				font-family: inherit;
+				font-synthesis: initial;
+			}
+
+			:lang(he), :lang(heb) { /* Modern Hebrew */
+				font-family: "Hebrew-Modern-NotoSans"; /* Force override */
+				font-synthesis: none;
+			}
+			:lang(he-Latn), :lang(heb-Latn) {
+				direction: ltr;
+				font-family: inherit;
+				font-synthesis: initial;
+			}
+			:lang(hbo) { /* Ancient Hebrew / Phoenician */
+				font-family: "Hebrew-Paleo-Gezer-Unicode", "Hebrew-Phoenician-NotoSans";
+				font-synthesis: none;
+			}
+			:lang(hbo-Latn) {
+				direction: ltr;
+				font-family: inherit;
+				font-synthesis: initial;
+			}
+		/* END: Define font-family */
+
+		.reset-1_25em { /* e.g. use for -Tglg and -Hebr scripts when there are Latin-scripts within the same element */
+			font-size: 0.8em;
+		}
+	/* END: LANG */
+
+	/**
+	 * Font classes for override, and in rare cases, to force the font to an element.
+	 *   Examples:
+	 *     1. Templates with explicit font-face for selected elements
+	 *     2. Header elements (<h1,2,3,4,5>) -- could be theme-based also
+	 *
+	 * Baybayin: Baybayin Modern club > Noto Sans Tagalog
+	 * Paleo Hebrew: Paleo Hebrew > Ancient Hebrew > Noto Sans Phoenician
+	 * Modern Hebrew: Modern Hebrew = Noto Sans Hebrew
+	 *
+	 * "direction" has to be added to cover all styling practices
+	**/
+
+		/* BGN: NotoSans */
+			.font-NotoSans {
+				/* direction: ltr; */
+				font-family: "Noto Sans";
+			}
+			.font-Baybayin-Tagbanwa-NotoSans {
+				direction: ltr;
+				font-family: "Baybayin-Tagbanwa-NotoSans";
+				font-synthesis: none;
+			}
+			.font-Baybayin-MangyanBuhid-NotoSans {
+				direction: ltr;
+				font-family: "Baybayin-MangyanBuhid-NotoSans";
+				font-synthesis: none;
+			}
+			.font-Baybayin-MangyanHanunoo-NotoSans {
+				direction: ltr;
+				font-family: "Baybayin-MangyanHanunoo-NotoSans";
+				font-synthesis: none;
+			}
+			.font-Baybayin-Tagalog-NotoSans {
+				direction: ltr;
+				font-family: "Baybayin-Tagalog-NotoSans";
+				font-synthesis: none;
+			}
+			.font-Greek-Modern-NotoSans {
+				direction: ltr;
+				font-family: "Noto Sans";
+				font-synthesis: none;
+			}
+			.font-Greek-Ancient-NotoSans {
+				direction: ltr;
+				font-family: "Noto Sans";
+				font-synthesis: none;
+			}
+			.font-Hebrew-Modern-NotoSans {
+				direction: rtl;
+				font-family: "Hebrew-Modern-NotoSans";
+				font-synthesis: none;
+			}
+			.font-Hebrew-Phoenician-NotoSans {
+				direction: rtl;
+				font-family: "Hebrew-Phoenician-NotoSans";
+				font-synthesis: none;
+			}
+		/* END: NotoSans */
+
+		/* BGN: Custom + fallback_NotoSans */
+			.font-Baybayin-Tagbanwa-paninap {
+				direction: ltr;
+				font-family: "Baybayin-Tagbanwa-paninap", "Baybayin-Tagbanwa-NotoSans";
+				font-synthesis: none;
+			}
+			.font-Baybayin-MangyanBuhid-Nordenx {
+				direction: ltr;
+				font-family: "Baybayin-MangyanBuhid-Nordenx", "Baybayin-MangyanBuhid-NotoSans";
+				font-synthesis: none;
+			}
+			.font-Baybayin-MangyanHanunoo-Habubrush-Nordenx {
+				direction: ltr;
+				font-family: "Baybayin-MangyanHanunoo-Hanubrush-Nordenx", "Baybayin-MangyanHanunoo-NotoSans";
+				font-synthesis: none;
+			}
+			.font-Baybayin-Tagalog-ModernClub-Nordenx {
+				direction: ltr;
+				font-family: "Baybayin-Tagalog-ModernClub-Nordenx", "Baybayin-Tagalog-NotoSans";
+				font-synthesis: none;
+			}
+			.font-Hebrew-Paleo-Gezer-Unicode {
+				direction: rtl;
+				font-family: "Hebrew-Paleo-Gezer-Unicode", "Hebrew-Phoenician-NotoSans";
+				font-synthesis: none;
+			}
+			.font-Hebrew-Proto-Canaanite-Unicode {
+				direction: rtl;
+				font-family: "Hebrew-Proto-Canaanite-Unicode", "Hebrew-Paleo-Gezer-Unicode", "Hebrew-Phoenician-NotoSans";
+				font-synthesis: none;
+			}
+		/* END: Custom + fallback_NotoSans */
+
+		.font-Barabara-Unicode-paninap {
+			direction: ltr;
+			font-family: "Barabara-Unicode-paninap", fantasy;
+		}
+
+	/* Unicode emoji */
+		/* We need to add !important to guarantee default third-party theme styles won't affect our emojis. */
+		/*
+		[class^="smiley-" i], [class$="-smiley" i],
+		[class^="emoticon-" i], [class$="-emoticon" i],
+		[class^="emoji-" i], [class$="-emoji" i],
+		[class*="emoji-" i], [class*="-emoji" i],
+		*/
+		[class~="smiley" i], [class~="emoticon" i], [class~="emoji" i] {
+			display: inline !important;
+			background: none !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			/* margin: 0 .07em 0 .1em !important; */
+			margin: 0 !important;
+			padding: 0 !important;
+			/* vertical-align: -0.1em !important; */
+			vertical-align: text-bottom !important;
+			font-family: emoji;
+			font-variant-emoji: emoji;
+			font-synthesis: none;
+		}
+		.unicode_emoji { /* usage: <span class="unicode_emoji">emoji_here</span> */
+			font-family: "Emoji-Twemoji-Color-SVGinOT", "Twitter Color Emoji", "Twemoji", emoji;
+			font-variant-emoji: emoji;
+			/* font-size: larger; */
+			font-synthesis: none;
+		}
+		.unicode_emoji_test {
+			font-size: 2.5rem;
+		}
 /***************
 ** END: FONTS **
 ***************/
@@ -1421,28 +1421,28 @@
 /***************
 ** BGN: SHIMS **
 ***************/
-  /* BIDI HTML5 and CSS3 "isolate" */
-  [dir="ltr"],
-  bdo[dir="ltr"],
-  :dir(ltr) {
-    direction: ltr;
-  }
-  [dir="rtl"],
-  bdo[dir="rtl"],
-  :dir(rtl) {
-    direction: rtl;
-  }
-  [dir="ltr"], [dir="rtl"]
-  :dir(ltr), :dir(rtl) {
-    unicode-bidi: -webkit-isolate;
-    unicode-bidi: -moz-isolate;
-    unicode-bidi: isolate;
-  }
-  bdo[dir="ltr"], bdo[dir="rtl"],
-  :dir(ltr), :dir(rtl) {
-    unicode-bidi: -moz-isolate-override;
-    unicode-bidi: isolate-override;
-  }
+	/* BIDI HTML5 and CSS3 "isolate" */
+	[dir="ltr"],
+	bdo[dir="ltr"],
+	:dir(ltr) {
+		direction: ltr;
+	}
+	[dir="rtl"],
+	bdo[dir="rtl"],
+	:dir(rtl) {
+		direction: rtl;
+	}
+	[dir="ltr"], [dir="rtl"]
+	:dir(ltr), :dir(rtl) {
+		unicode-bidi: -webkit-isolate;
+		unicode-bidi: -moz-isolate;
+		unicode-bidi: isolate;
+	}
+	bdo[dir="ltr"], bdo[dir="rtl"],
+	:dir(ltr), :dir(rtl) {
+		unicode-bidi: -moz-isolate-override;
+		unicode-bidi: isolate-override;
+	}
 /***************
 ** END: SHIMS **
 ***************/
